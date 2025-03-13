@@ -5,14 +5,14 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/theme";
 
 export const metadata: Metadata = {
-  title: "Next Essential | Elementary",
+  title: "Fluttercon | ABT Open Source",
   description:
     "Next Essential - An Essential Template to get started with Next.js application with all the essentials included...",
   icons: {
     icon: "favicon.png",
   },
   openGraph: {
-    title: "Next Essential | Elementary",
+    title: "Fluttercon | ABT Open Source",
     description:
       "Next Essential - An Essential Template to get started with Next.js application with all the essentials included...",
     url: "https://elementary.vgseven.com",
