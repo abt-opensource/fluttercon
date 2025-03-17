@@ -3,16 +3,21 @@ import "@/styles/root-layout.css";
 import { fonts } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/theme";
+import { StrokeProvider } from "./global";
 
 export const metadata: Metadata = {
-  title: "Fluttercon | ABT Open Source",
+
+  title: "Fluttercon | ABT-Open-Sourse",
+
   description:
     "Next Essential - An Essential Template to get started with Next.js application with all the essentials included...",
   icons: {
     icon: "favicon.png",
   },
   openGraph: {
+
     title: "Fluttercon | ABT Open Source",
+
     description:
       "Next Essential - An Essential Template to get started with Next.js application with all the essentials included...",
     url: "https://elementary.vgseven.com",
@@ -68,6 +73,19 @@ export default function RootLayout({
       )}
     >
       <body>
+      <StrokeProvider>
+          
+          {/* <div className="flex">
+           
+            <Sidebar />
+
+            
+            <main className="ml-64 p-6 w-full">
+              <IconList />
+              {children}
+            </main>
+          </div> */}
+      
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -76,6 +94,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        </StrokeProvider>
       </body>
     </html>
   );
