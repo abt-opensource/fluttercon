@@ -3,6 +3,8 @@ import "@/styles/root-layout.css";
 import { fonts } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/theme";
+import Footer from "./footer/page";
+import { Header } from "./header/page";
 
 export const metadata: Metadata = {
   title: "Next Essential | Elementary",
@@ -74,7 +76,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          {" "}
+          <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
