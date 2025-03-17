@@ -8,14 +8,18 @@ import { Header } from "./header/page";
 import { StrokeProvider } from "./global";
 
 export const metadata: Metadata = {
+
   title: "Fluttercon | ABT-Open-Sourse",
+
   description:
     "Next Essential - An Essential Template to get started with Next.js application with all the essentials included...",
   icons: {
     icon: "favicon.png",
   },
   openGraph: {
-    title: "Fluttercon | Abt-store",
+
+    title: "Fluttercon | ABT Open Source",
+
     description:
       "Next Essential - An Essential Template to get started with Next.js application with all the essentials included...",
     url: "https://elementary.vgseven.com",
