@@ -2,13 +2,13 @@ const page = () => {
   return (
     <div className="mx-auto max-w-3xl rounded-lg p-12">
       <h1 className="mb-6 font-semibold text-4xl text-stone-700">
-        Lucide License
+        Fluttercon License
       </h1>
-      <p className="mt-2 mb-6 text-gray-700">ISC License</p>
+      <p className="mt-2 mb-6 text-gray-700">MIT License</p>
       <p className="mt-2 text-gray-700">
-        Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2022 as
-        part of Feather (MIT). All other copyright (c) for Lucide are held by
-        Lucide Contributors 2022.
+        Copyright (c) for portions of Fluttercon are held by Cole Bemis
+        2013-2022 as part of Feather (MIT). All other copyright (c) for
+        Fluttercon are held by Fluttercon Contributors 2022.
       </p>
       <p className="mt-4 text-gray-700">
         Permission to use, copy, modify, and/or distribute this software for any

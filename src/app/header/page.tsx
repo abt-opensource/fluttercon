@@ -1,5 +1,4 @@
 "use client";
-
 import {
   Sheet,
   SheetContent,
@@ -15,12 +14,12 @@ export const Header = () => {
       <div className="flex items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center space-x-2">
           <Image
-            src="/lucidelogo.png"
-            alt="Lucide Logo"
+            src="/flutterconlogo.png"
+            alt="flutterconlogo"
             width={30}
             height={30}
           />
-          <span className="font-semibold text-2xl text-black">LUCIDE</span>
+          <span className="font-semibold text-2xl text-black">FLUTTERCON</span>
         </div>
 
         <nav className="hidden items-center space-x-6 font-medium text-neutral-700 text-sm md:flex">
