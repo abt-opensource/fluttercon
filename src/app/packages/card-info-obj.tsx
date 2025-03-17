@@ -1,155 +1,83 @@
 export const packageInfoObj = [
   {
     id: 1,
-    img: "/assets/lucid-package-images/js.svg",
-    cardHead: "lucide",
-    managerLink: "https://www.npmjs.com/package/lucide",
-    dscr: "A Lucide icon library package for web and javascript applications.",
-    guideLink: "/guide/packages/lucide",
-    sourceLink:
+    cardHead: "Flutercon : The Icon Library",
+    dscr: "At the heart of Titanium security framework is Argon2, the winner of the Password Hashing Competition (PHC). Argon2 is specifically designed to resist both side-channel attacks and GPU-based attacks, making it exceptionally robust against modern hacking techniques.",
+    points: [
+      {
+        id: 1,
+        heading: "Memory-hard Functions",
+        dscr: " Argon2 requires significant memory to compute hashes, making it difficult for attackers to use brute-force methods.",
+      },
+      {
+        id: 2,
+        heading: "Customizable Parameters",
+        dscr: " Argon2 allows fine-tuning of its time, memory, and parallelism parameters, enabling Titanium to optimize security and performance.",
+      },
+      {
+        id: 3,
+        heading: "Resistance to Precomputation Attacks",
+        dscr: " By incorporating salt and unique hashing techniques, Argon2 ensures that each password hash is unique, preventing attackers from reusing precomputed hashes.",
+      },
+    ],
+    footerDscr:
+      "By utilizing Argon2, Titanium provides unparalleled protection for your passwords, ensuring they remain secure against evolving threats.",
+    GSLink: "/guide/packages/lucide",
+    starLink:
       "https://github.com/lucide-icons/lucide/tree/main/packages/lucide",
   },
   {
     id: 2,
-    img: "/assets/lucid-package-images/react.svg",
-    cardHead: "lucide-react",
-    managerLink: "https://www.npmjs.com/package/lucide",
-    dscr: "A Lucide icon library package for web and javascript applications.",
-    guideLink: "/guide/packages/lucide",
-    sourceLink:
+    cardHead: "Flutercon : The Icon Library",
+    dscr: "At the heart of Titanium security framework is Argon2, the winner of the Password Hashing Competition (PHC). Argon2 is specifically designed to resist both side-channel attacks and GPU-based attacks, making it exceptionally robust against modern hacking techniques.",
+    points: [
+      {
+        id: 1,
+        heading: "Memory-hard Functions",
+        dscr: " Argon2 requires significant memory to compute hashes, making it difficult for attackers to use brute-force methods.",
+      },
+      {
+        id: 2,
+        heading: "Customizable Parameters",
+        dscr: " Argon2 allows fine-tuning of its time, memory, and parallelism parameters, enabling Titanium to optimize security and performance.",
+      },
+      {
+        id: 3,
+        heading: "Resistance to Precomputation Attacks",
+        dscr: " By incorporating salt and unique hashing techniques, Argon2 ensures that each password hash is unique, preventing attackers from reusing precomputed hashes.",
+      },
+    ],
+    footerDscr:
+      "By utilizing Argon2, Titanium provides unparalleled protection for your passwords, ensuring they remain secure against evolving threats.",
+    GSLink: "/guide/packages/lucide",
+    starLink:
       "https://github.com/lucide-icons/lucide/tree/main/packages/lucide",
   },
   {
     id: 3,
-    img: "/assets/lucid-package-images/vue-next.svg",
-    cardHead: "lucide-vue-next",
-    managerLink: "https://www.npmjs.com/package/lucide",
-    dscr: "A Lucide icon library package for web and javascript applications.",
-    guideLink: "/guide/packages/lucide",
-    sourceLink:
-      "https://github.com/lucide-icons/lucide/tree/main/packages/lucide",
-  },
-  {
-    id: 4,
-    img: "/assets/lucid-package-images/svelte.svg",
-    cardHead: "lucide-svelte",
-    managerLink: "https://www.npmjs.com/package/lucide",
-    dscr: "A Lucide icon library package for web and javascript applications.",
-    guideLink: "/guide/packages/lucide",
-    sourceLink:
-      "https://github.com/lucide-icons/lucide/tree/main/packages/lucide",
-  },
-  {
-    id: 5,
-    img: "/assets/lucid-package-images/solid.svg",
-    cardHead: "lucide-solid",
-    managerLink: "https://www.npmjs.com/package/lucide",
-    dscr: "A Lucide icon library package for web and javascript applications.",
-    guideLink: "/guide/packages/lucide",
-    sourceLink:
-      "https://github.com/lucide-icons/lucide/tree/main/packages/lucide",
-  },
-  {
-    id: 6,
-    img: "/assets/lucid-package-images/react-native.svg",
-    cardHead: "lucide-react-native",
-    managerLink: "https://www.npmjs.com/package/lucide",
-    dscr: "A Lucide icon library package for web and javascript applications.",
-    guideLink: "/guide/packages/lucide",
-    sourceLink:
-      "https://github.com/lucide-icons/lucide/tree/main/packages/lucide",
-  },
-  {
-    id: 7,
-    img: "/assets/lucid-package-images/angular.svg",
-    cardHead: "lucide-angular",
-    managerLink: "https://www.npmjs.com/package/lucide",
-    dscr: "A Lucide icon library package for web and javascript applications.",
-    guideLink: "/guide/packages/lucide",
-    sourceLink:
-      "https://github.com/lucide-icons/lucide/tree/main/packages/lucide",
-  },
-  {
-    id: 8,
-    img: "/assets/lucid-package-images/preact.svg",
-    cardHead: "lucide-preact",
-    managerLink: "https://www.npmjs.com/package/lucide",
-    dscr: "A Lucide icon library package for web and javascript applications.",
-    guideLink: "/guide/packages/lucide",
-    sourceLink:
-      "https://github.com/lucide-icons/lucide/tree/main/packages/lucide",
-  },
-  {
-    id: 9,
-    img: "/assets/lucid-package-images/svg.svg",
-    cardHead: "lucide-static",
-    managerLink: "https://www.npmjs.com/package/lucide",
-    dscr: "A Lucide icon library package for web and javascript applications.",
-    guideLink: "/guide/packages/lucide",
-    sourceLink:
-      "https://github.com/lucide-icons/lucide/tree/main/packages/lucide",
-  },
-  {
-    id: 10,
-    img: "/assets/lucid-package-images/svg.svg",
-    cardHead: "lucide-static",
-    managerLink: "https://www.npmjs.com/package/lucide",
-    dscr: "A Lucide icon library package for web and javascript applications.",
-    guideLink: "/guide/packages/lucide",
-    sourceLink:
-      "https://github.com/lucide-icons/lucide/tree/main/packages/lucide",
-  },
-];
-
-export const thirdPackageInfoObj = [
-  {
-    id: 1,
-    img: "/assets/lucid-third-party/svg.svg",
-    cardHead: "blade-lucide-icons",
-    managerLink: "https://www.npmjs.com/package/lucide",
-    dscr: "A Lucide icon library package for web and javascript applications.",
-    guideLink: "/guide/packages/lucide",
-    sourceLink:
-      "https://github.com/lucide-icons/lucide/tree/main/packages/lucide",
-  },
-  {
-    id: 2,
-    img: "/assets/lucid-third-party/hyva-dark.svg",
-    cardHead: "hyva-lucide-icons",
-    managerLink: "https://www.npmjs.com/package/lucide",
-    dscr: "A Lucide icon library package for web and javascript applications.",
-    guideLink: "/guide/packages/lucide",
-    sourceLink:
-      "https://github.com/lucide-icons/lucide/tree/main/packages/lucide",
-  },
-  {
-    id: 3,
-    img: "/assets/lucid-third-party/11ty.svg",
-    cardHead: "eleventy-lucide-icons",
-    managerLink: "https://www.npmjs.com/package/lucide",
-    dscr: "A Lucide icon library package for web and javascript applications.",
-    guideLink: "/guide/packages/lucide",
-    sourceLink:
-      "https://github.com/lucide-icons/lucide/tree/main/packages/lucide",
-  },
-  {
-    id: 4,
-    img: "/assets/lucid-third-party/nuxt.svg",
-    cardHead: "nuxt-lucide-icons",
-    managerLink: "https://www.npmjs.com/package/lucide",
-    dscr: "A Lucide icon library package for web and javascript applications.",
-    guideLink: "/guide/packages/lucide",
-    sourceLink:
-      "https://github.com/lucide-icons/lucide/tree/main/packages/lucide",
-  },
-  {
-    id: 5,
-    img: "/assets/lucid-third-party/lustre.webp",
-    cardHead: "lucide-lustre",
-    managerLink: "https://www.npmjs.com/package/lucide",
-    dscr: "A Lucide icon library package for web and javascript applications.",
-    guideLink: "/guide/packages/lucide",
-    sourceLink:
+    cardHead: "Flutercon : The Icon Library",
+    dscr: "At the heart of Titanium security framework is Argon2, the winner of the Password Hashing Competition (PHC). Argon2 is specifically designed to resist both side-channel attacks and GPU-based attacks, making it exceptionally robust against modern hacking techniques.",
+    points: [
+      {
+        id: 1,
+        heading: "Memory-hard Functions",
+        dscr: " Argon2 requires significant memory to compute hashes, making it difficult for attackers to use brute-force methods.",
+      },
+      {
+        id: 2,
+        heading: "Customizable Parameters",
+        dscr: " Argon2 allows fine-tuning of its time, memory, and parallelism parameters, enabling Titanium to optimize security and performance.",
+      },
+      {
+        id: 3,
+        heading: "Resistance to Precomputation Attacks",
+        dscr: " By incorporating salt and unique hashing techniques, Argon2 ensures that each password hash is unique, preventing attackers from reusing precomputed hashes.",
+      },
+    ],
+    footerDscr:
+      "By utilizing Argon2, Titanium provides unparalleled protection for your passwords, ensuring they remain secure against evolving threats.",
+    GSLink: "/guide/packages/lucide",
+    starLink:
       "https://github.com/lucide-icons/lucide/tree/main/packages/lucide",
   },
 ];
