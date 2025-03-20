@@ -31,7 +31,7 @@ const Footer = () => {
         </button>
       </div>
 
-      <nav className="mt-6·flex·flex-wrap·justify-center·gap-4·text-gray-400·text-sm sm:gap-6">
+      <nav className="mt-6 flex flex-wrap justify-center gap-4 text-gray-400 text-sm sm:gap-6">
         <Link href="#" className="hover:text-white">
           About
         </Link>

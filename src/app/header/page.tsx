@@ -14,7 +14,7 @@ export const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-4 z-10 mx-auto·flex h-14 max-w-2xl items-center justify-between rounded-2xl px-6 py-3 backdrop-blur-xl">
+    <header className="sticky top-4 z-10 mx-auto flex h-14 max-w-2xl items-center justify-between rounded-2xl px-6 py-3 backdrop-blur-xl">
       {/* Desktop Navigation */}
       <nav className="hidden flex-wrap items-center gap-4 font-semibold text-black text-sm md:flex lg:gap-6">
         <Link href="#" className="hover:text-gray-900">

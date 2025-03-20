@@ -4,17 +4,18 @@ import { fonts } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/theme";
 import Footer from "./footer/page";
+import { StrokeProvider } from "./global";
 import { Header } from "./header/page";
 
 export const metadata: Metadata = {
-  title: "Next Essential | Elementary",
+  title: "Fluttercon | ABT-Open-Sourse",
   description:
     "Next Essential - An Essential Template to get started with Next.js application with all the essentials included...",
   icons: {
     icon: "favicon.png",
   },
   openGraph: {
-    title: "Next Essential | Elementary",
+    title: "Fluttercon | Abt-store",
     description:
       "Next Essential - An Essential Template to get started with Next.js application with all the essentials included...",
     url: "https://elementary.vgseven.com",
@@ -70,17 +71,30 @@ export default function RootLayout({
       )}
     >
       <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {" "}
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
+        <StrokeProvider>
+          {/* <div className="flex">
+           
+            <Sidebar />
+
+            
+            <main className="ml-64 p-6 w-full">
+              <IconList />
+              {children}
+            </main>
+          </div> */}
+
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {" "}
+            <Header />
+            {children}
+            <Footer />
+          </ThemeProvider>
+        </StrokeProvider>
       </body>
     </html>
   );
