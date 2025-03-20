@@ -1,50 +1,54 @@
-import { MoveUpRight } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="mx-4 mb-2 flex flex-col items-center gap-12 gap-y-4 border-t px-6 py-4 text-gray-500 text-sm md:mx-12 md:flex-row">
-      {/* Left Section */}
-      <div className="text-center font-semibold md:text-left">
-        <p>Released under the MIT License.</p>
-        <p className="mt-1">Copyright © {currentYear} ABT OPEN SOURCE</p>
+    <footer className="bg-black px-5 py-10 text-center text-white">
+      <h1 className="font-bold text-5xl text-green-500 sm:text-6xl md:text-7xl lg:text-8xl">
+        Fluttercon
+      </h1>
+
+      <div className="mt-6 flex flex-wrap justify-center gap-4">
+        <button
+          type="button"
+          className="rounded-full bg-gray-800 p-3 transition hover:bg-gray-700"
+        >
+          <Linkedin size={20} />
+        </button>
+        <button
+          type="button"
+          className="rounded-full bg-gray-800·p-3 transition hover:bg-gray-700"
+        >
+          <Mail size={20} />
+        </button>
+        <button
+          type="button"
+          className="rounded-full bg-gray-800 p-3 transition hover:bg-gray-700"
+        >
+          <Github size={20} />
+        </button>
       </div>
 
-      {/* Center Section (Now Centered) */}
-      <nav className="flex flex-wrap gap-4 text-lg">
-        <Link href="#" className="hover:underline">
-          License
+      <nav className="mt-6·flex·flex-wrap·justify-center·gap-4·text-gray-400·text-sm sm:gap-6">
+        <Link href="#" className="hover:text-white">
+          About
         </Link>
-        <Link href="#" className="hover:underline">
-          Contribute
+        <Link href="#" className="hover:text-white">
+          Terms & Conditions
         </Link>
-        <Link
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center hover:underline"
-        >
-          Changelog <MoveUpRight className="ml-1" size={12} />
+        <Link href="#" className="hover:text-white">
+          Privacy Policy
         </Link>
-        <Link
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center hover:underline"
-        >
-          GitHub <MoveUpRight className="ml-1" size={12} />
-        </Link>
-        <Link
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center hover:underline"
-        >
-          Issues <MoveUpRight className="ml-1" size={12} />
+        <Link href="#" className="hover:text-white">
+          Contact
         </Link>
       </nav>
+
+      <p className="mt-6 text-gray-500 text-xs">
+        ALL RIGHTS RESERVED. VGSEVEN.COM © {currentYear}
+      </p>
     </footer>
   );
 };
