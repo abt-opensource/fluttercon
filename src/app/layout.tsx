@@ -4,8 +4,8 @@ import { fonts } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/theme";
 import Footer from "./footer/page";
-import { Header } from "./header/page";
 import { StrokeProvider } from "./global";
+import { Header } from "./header/page";
 
 export const metadata: Metadata = {
 
@@ -75,8 +75,7 @@ export default function RootLayout({
       )}
     >
       <body>
-      <StrokeProvider>
-          
+        <StrokeProvider>
           {/* <div className="flex">
            
             <Sidebar />
@@ -87,18 +86,18 @@ export default function RootLayout({
               {children}
             </main>
           </div> */}
-      
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {" "}
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
+
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {" "}
+            <Header />
+            {children}
+            <Footer />
+          </ThemeProvider>
         </StrokeProvider>
       </body>
     </html>

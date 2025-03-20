@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useState, type ReactNode } from "react";
+import { type ReactNode, createContext, useState } from "react";
 
 interface StrokeContextType {
   strokeWidth: number;
@@ -11,7 +11,9 @@ interface StrokeContextType {
   setIconSize: (size: number) => void;
 }
 
-export const StrokeContext = createContext<StrokeContextType | undefined>(undefined);
+export const StrokeContext = createContext<StrokeContextType | undefined>(
+  undefined
+);
 
 interface StrokeProviderProps {
   children: ReactNode;
@@ -23,7 +25,16 @@ export const StrokeProvider: React.FC<StrokeProviderProps> = ({ children }) => {
   const [iconSize, setIconSize] = useState<number>(24);
 
   return (
-    <StrokeContext.Provider value={{ strokeWidth, setStrokeWidth, color, setColor, iconSize, setIconSize }}>
+    <StrokeContext.Provider
+      value={{
+        strokeWidth,
+        setStrokeWidth,
+        color,
+        setColor,
+        iconSize,
+        setIconSize,
+      }}
+    >
       {children}
     </StrokeContext.Provider>
   );

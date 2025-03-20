@@ -1,15 +1,24 @@
 "use client";
-import type React from "react";
-import { type JSX, useContext, useState } from "react"
-import Link from "next/link";
-import { StrokeContext } from "../global";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { Search } from "lucide-react";
+import Link from "next/link";
+import type React from "react";
+import { type JSX, useContext, useState } from "react";
+import { StrokeContext } from "../global";
 import { Icons } from "./icons";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 interface IconType {
   name: string;
-  svg: (props: { strokeWidth: number; color: string; iconSize: number }) => JSX.Element;
+  svg: (props: {
+    strokeWidth: number;
+    color: string;
+    iconSize: number;
+  }) => JSX.Element;
 }
 
 const IconList: React.FC = () => {
@@ -33,7 +42,11 @@ const IconList: React.FC = () => {
   const copySvgToClipboard = () => {
     if (selectedIcon) {
       const tempDiv = document.createElement("div");
-      tempDiv.innerHTML = selectedIcon.svg({ strokeWidth, color, iconSize }).props.children;
+      tempDiv.innerHTML = selectedIcon.svg({
+        strokeWidth,
+        color,
+        iconSize,
+      }).props.children;
 
       const svgString = `<svg viewBox="0 0 24 24" stroke="currentColor">${tempDiv.innerHTML}</svg>`;
 
@@ -46,17 +59,31 @@ const IconList: React.FC = () => {
 
   return (
     <TooltipProvider>
-   
       <header className="bg-black p-4 text-white">
         <nav className="mx-auto flex max-w-6xl items-center justify-end space-x-6">
           <div className="hidden space-x-6 font-medium text-sm md:block">
-            <Link href="#" className="text-red-400">Icons</Link>
-            <Link href="#" className="hover:text-gray-400">Guide</Link>
-            <Link href="#" className="hover:text-gray-400">Packages</Link>
-            <Link href="#" className="hover:text-gray-400">Showcase</Link>
-            <Link href="#" className="hover:text-gray-400">License</Link>
+            <Link href="#" className="text-red-400">
+              Icons
+            </Link>
+            <Link href="#" className="hover:text-gray-400">
+              Guide
+            </Link>
+            <Link href="#" className="hover:text-gray-400">
+              Packages
+            </Link>
+            <Link href="#" className="hover:text-gray-400">
+              Showcase
+            </Link>
+            <Link href="#" className="hover:text-gray-400">
+              License
+            </Link>
           </div>
-          <button type="button" className="text-gray-400 text-lg hover:text-white">⋯</button>
+          <button
+            type="button"
+            className="text-gray-400 text-lg hover:text-white"
+          >
+            ⋯
+          </button>
         </nav>
 
         {/* Search Input */}
@@ -75,35 +102,38 @@ const IconList: React.FC = () => {
       {/* Icon Grid */}
       <div className="relative bg-black p-6 text-white">
         <div className="grid grid-cols-4 gap-2 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-16">
-        {filteredIcons.map((icon) => (
-  <Tooltip key={icon.name}>
-    <TooltipTrigger asChild>
-      <button type="button"
-        className="relative flex h-16 w-16 cursor-pointer items-center justify-center rounded-lg border border-gray-700 bg-black text-white shadow-md transition-all hover:scale-105 hover:bg-gray-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
-        onClick={() => handleClick(icon)}
-        onKeyDown={(e) => e.key === "Enter" && handleClick(icon)}
-      >
-        <div className="flex h-6 w-6 items-center justify-center">
-          {icon.svg({ strokeWidth, color })}
-        </div>
-      </button>
-    </TooltipTrigger>
+          {filteredIcons.map((icon) => (
+            <Tooltip key={icon.name}>
+              <TooltipTrigger asChild>
+                <button
+                  type="button"
+                  className="relative flex h-16 w-16 cursor-pointer items-center justify-center rounded-lg border border-gray-700 bg-black text-white shadow-md transition-all hover:scale-105 hover:bg-gray-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
+                  onClick={() => handleClick(icon)}
+                  onKeyDown={(e) => e.key === "Enter" && handleClick(icon)}
+                >
+                  <div className="flex h-6 w-6 items-center justify-center">
+                    {icon.svg({ strokeWidth, color })}
+                  </div>
+                </button>
+              </TooltipTrigger>
 
-    <TooltipContent side="bottom" align="center" className="rounded bg-gray-800 p-2 text-white shadow-lg">
-      <span className="font-medium text-sm">{icon.name}</span>
-    </TooltipContent>
-  </Tooltip>
-))}
-
-
+              <TooltipContent
+                side="bottom"
+                align="center"
+                className="rounded bg-gray-800 p-2 text-white shadow-lg"
+              >
+                <span className="font-medium text-sm">{icon.name}</span>
+              </TooltipContent>
+            </Tooltip>
+          ))}
         </div>
       </div>
 
-    
       {selectedIcon && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
           <div className="relative w-[400px] rounded-lg bg-[#181818] p-6 text-white shadow-lg">
-            <button type="button"
+            <button
+              type="button"
               className="absolute top-3 right-3 text-gray-400 hover:text-gray-200"
               onClick={() => setSelectedIcon(null)}
             >
@@ -123,16 +153,26 @@ const IconList: React.FC = () => {
               </div>
 
               <div className="mt-3 flex gap-2">
-                <span className="rounded-md bg-black px-3 py-1 text-white text-xs">Arrows</span>
-                <span className="rounded-md bg-black px-3 py-1 text-white text-xs">Navigation</span>
-                <span className="rounded-md bg-black px-3 py-1 text-white text-xs">Development</span>
+                <span className="rounded-md bg-black px-3 py-1 text-white text-xs">
+                  Arrows
+                </span>
+                <span className="rounded-md bg-black px-3 py-1 text-white text-xs">
+                  Navigation
+                </span>
+                <span className="rounded-md bg-black px-3 py-1 text-white text-xs">
+                  Development
+                </span>
               </div>
 
               <div className="mt-4 flex gap-2">
-                <button type="button" className="rounded bg-[#E63946] px-4 py-2 font-medium text-sm hover:bg-red-600">
+                <button
+                  type="button"
+                  className="rounded bg-[#E63946] px-4 py-2 font-medium text-sm hover:bg-red-600"
+                >
                   See in action
                 </button>
-                <button type="button"
+                <button
+                  type="button"
                   className="rounded bg-gray-700 px-4 py-2 font-medium text-sm hover:bg-gray-600"
                   onClick={copySvgToClipboard}
                 >
