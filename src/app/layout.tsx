@@ -8,7 +8,6 @@ import { StrokeProvider } from "./global";
 import { Header } from "./header/page";
 
 export const metadata: Metadata = {
-
   title: "Fluttercon | ABT-Open-Sourse",
 
   description:
@@ -17,7 +16,6 @@ export const metadata: Metadata = {
     icon: "favicon.png",
   },
   openGraph: {
-
     title: "Fluttercon | ABT Open Source",
 
     description:
