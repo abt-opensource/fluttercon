@@ -12,10 +12,10 @@ export default function LucidePage() {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row min-h-screen bg-white text-black">
+      <div className="flex min-h-screen flex-col bg-white text-black md:flex-row">
         <button
           type="button"
-          className="md:hidden p-3 bg-stone-200 text-black w-full text-left border-b"
+          className="w-full border-b bg-stone-200 p-3 text-left text-black md:hidden"
           onClick={() => setSidebarOpen(!sidebarOpen)}
         >
           <AlignJustify />
@@ -24,29 +24,29 @@ export default function LucidePage() {
         <aside
           className={`${
             sidebarOpen ? "block" : "hidden"
-          } md:block md:w-64 h-screen p-5 border-r bg-stone-100 overflow-hidden`}
+          } h-screen overflow-hidden border-r bg-stone-100 p-5 md:block md:w-64`}
         >
           <ScrollArea className="h-full w-full">
             <div className="h-full pr-3">
-              <nav className="space-y-4 cursor-pointer pl-6">
-                <h4 className="font-semibold text-lg text-gray-800">
+              <nav className="cursor-pointer space-y-4 pl-6">
+                <h4 className="font-semibold text-gray-800 text-lg">
                   Introduction
                 </h4>
-                <ul className="space-y-2 text-sm font-medium text-gray-600">
+                <ul className="space-y-2 font-medium text-gray-600 text-sm">
                   <li className="hover:text-red-500">What is Lucide?</li>
                   <li className="hover:text-red-500">Installation</li>
                   <li className="hover:text-red-500">Comparison</li>
                 </ul>
                 <Separator />
-                <h4 className="font-semibold text-lg text-gray-800">Basics</h4>
-                <ul className="space-y-2 text-sm font-medium text-gray-600">
+                <h4 className="font-semibold text-gray-800 text-lg">Basics</h4>
+                <ul className="space-y-2 font-medium text-gray-600 text-sm">
                   <li className="hover:text-red-500">Color</li>
                   <li className="hover:text-red-500">Sizing</li>
                   <li className="hover:text-red-500">Stroke width</li>
                 </ul>
                 <Separator />
-                <h4 className="font-semibold text-lg text-black">Advanced</h4>
-                <ul className="space-y-2 text-sm font-medium text-gray-600">
+                <h4 className="font-semibold text-black text-lg">Advanced</h4>
+                <ul className="space-y-2 font-medium text-gray-600 text-sm">
                   <li className="hover:text-red-500">Accessibility</li>
                   <li className="hover:text-red-500">Global styling</li>
                   <li className="hover:text-red-500">Filled icons</li>
@@ -54,8 +54,8 @@ export default function LucidePage() {
                 </ul>
 
                 <Separator />
-                <h4 className="font-semibold text-lg text-black">Packages</h4>
-                <ul className="space-y-2 text-sm font-medium text-gray-600">
+                <h4 className="font-semibold text-black text-lg">Packages</h4>
+                <ul className="space-y-2 font-medium text-gray-600 text-sm">
                   <li className="hover:text-red-500">Lucide</li>
                   <li className="hover:text-red-500">Lucide React</li>
                   <li className="hover:text-red-500">Lucide Vue</li>
@@ -68,10 +68,10 @@ export default function LucidePage() {
                 </ul>
 
                 <Separator />
-                <h4 className="font-semibold text-lg text-black">
+                <h4 className="font-semibold text-black text-lg">
                   Contributing
                 </h4>
-                <ul className="space-y-2 text-sm font-medium text-gray-600">
+                <ul className="space-y-2 font-medium text-gray-600 text-sm">
                   <li className="hover:text-red-500">Icon Design Principles</li>
                   <li className="hover:text-red-500">
                     Designing In Illustration
@@ -88,9 +88,9 @@ export default function LucidePage() {
         </aside>
 
         {/* Main Content */}
-        <ScrollArea className="flex-1 p-8 h-screen w-full">
-          <main className="pb-12 max-w-2xl mx-auto">
-            <h1 className="text-3xl font-bold text-gray-800">
+        <ScrollArea className="h-screen w-full flex-1 p-8">
+          <main className="mx-auto max-w-2xl pb-12">
+            <h1 className="font-bold text-3xl text-gray-800">
               What is Lucide?
             </h1>
             <p className="mt-3 text-gray-700 text-lg">
@@ -107,7 +107,7 @@ export default function LucidePage() {
 
             <h2
               id="available-icons"
-              className="text-2xl font-semibold text-gray-800"
+              className="font-semibold text-2xl text-gray-800"
             >
               Available Icons
             </h2>
@@ -122,7 +122,7 @@ export default function LucidePage() {
 
             <Separator className="my-6" />
 
-            <h2 className="text-2xl font-semibold text-gray-800">
+            <h2 className="font-semibold text-2xl text-gray-800">
               Complete Set of Icons
             </h2>
             <p className="mt-3 text-gray-700 text-lg">
@@ -140,7 +140,7 @@ export default function LucidePage() {
 
             <h2
               id="code-optimization"
-              className="text-2xl font-semibold text-gray-800"
+              className="font-semibold text-2xl text-gray-800"
             >
               Code Optimizations
             </h2>
@@ -158,7 +158,7 @@ export default function LucidePage() {
 
             <h2
               id="accessibility"
-              className="text-2xl font-semibold text-gray-800"
+              className="font-semibold text-2xl text-gray-800"
             >
               Accessibility
             </h2>
@@ -179,7 +179,7 @@ export default function LucidePage() {
 
             <h2
               id="official-packages"
-              className="text-2xl font-semibold text-gray-800"
+              className="font-semibold text-2xl text-gray-800"
             >
               Official Packages
             </h2>
@@ -197,7 +197,7 @@ export default function LucidePage() {
 
             <Separator className="my-6" />
 
-            <h2 id="community" className="text-2xl font-semibold text-gray-800">
+            <h2 id="community" className="font-semibold text-2xl text-gray-800">
               Community
             </h2>
             <p className="mt-3 text-gray-700 text-lg">
@@ -207,7 +207,7 @@ export default function LucidePage() {
               <span className="text-red-400 underline">Discord</span>.
             </p>
 
-            <p className="text-red-400 flex mt-8">
+            <p className="mt-8 flex text-red-400">
               <FilePenLine size={20} />
               Edit this page
             </p>
@@ -222,9 +222,9 @@ export default function LucidePage() {
 
         {/* Right Side Content */}
 
-        <aside className="w-full mt-6 p-5 border-t bg-white md:w-64 md:border-l md:h-screen md:mt-0">
-          <h4 className="font-semibold text-lg text-gray-800">On This Page</h4>
-          <ul className="space-y-2 text-sm font-medium text-gray-500 mt-3 cursor-pointer">
+        <aside className="mt-6 w-full border-t bg-white p-5 md:mt-0 md:h-screen md:w-64 md:border-l">
+          <h4 className="font-semibold text-gray-800 text-lg">On This Page</h4>
+          <ul className="mt-3 cursor-pointer space-y-2 font-medium text-gray-500 text-sm">
             <li>
               <a href="#available-icons" className="hover:text-gray-600">
                 Available Icons
@@ -255,18 +255,18 @@ export default function LucidePage() {
           <Separator className="my-6" />
 
           <Card>
-            <CardContent className="p-5 flex flex-col items-center text-center">
+            <CardContent className="flex flex-col items-center p-5 text-center">
               <Image
                 src="/icons.jpg"
                 alt="Icon"
                 width={500}
                 height={300}
-                className="w-16 h-16 flex items-center justify-center rounded-lg"
+                className="flex h-16 w-16 items-center justify-center rounded-lg"
               />
-              <p className="text-sm text-gray-500 mt-3">
+              <p className="mt-3 text-gray-500 text-sm">
                 Design and Development tips in your inbox. Every weekday.
               </p>
-              <span className="text-xs text-gray-500 mt-1">ADS VIA CARBON</span>
+              <span className="mt-1 text-gray-500 text-xs">ADS VIA CARBON</span>
             </CardContent>
           </Card>
         </aside>
