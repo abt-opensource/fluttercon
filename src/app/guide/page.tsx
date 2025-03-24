@@ -122,9 +122,8 @@ export default function LucidePage() {
               (svg) files for displaying icons and symbols in digital and
               non-digital projects. The library aims to make it easier for
               designers and developers to incorporate icons into their projects
-              by providing several official{" "}
-              <span className="text-red-400 underline">packages</span> to make
-              it easier to use these icons in your project.
+              by providing several official package to make it easier to use
+              these icons in your project.
             </p>
 
             <Separator className="my-6" />
@@ -193,10 +192,7 @@ export default function LucidePage() {
               <br />
               <br />
               However, not everyone can understand them easily. Read more about
-              <span className="text-red-400 underline">
-                {" "}
-                how to use Lucide in an accessible way.
-              </span>
+              how to use Lucide in an accessible way.
             </p>
 
             <Separator className="my-6" />
@@ -211,12 +207,8 @@ export default function LucidePage() {
               Lucide's official packages are designed to work on different
               platforms, making it easier for users to integrate icons into
               their projects. The packages are available for various
-              technologies, including{" "}
-              <span className="text-red-400 underline">
-                Web (Vanilla), React, React Native, Vue, Vue 3, Svelte, Preact,
-                Solid, Angular, NodeJS
-              </span>{" "}
-              and <span className="text-red-400 underline">Flutter.</span>
+              technologies, including Web (Vanilla), React, React Native, Vue,
+              Vue 3, Svelte, Preact, Solid, Angular, NodeJS and Flutter.
             </p>
 
             <Separator className="my-6" />
@@ -226,12 +218,10 @@ export default function LucidePage() {
             </h2>
             <p className="mt-3 text-gray-700 text-lg">
               If you have any questions about Lucide, feel free to reach out to
-              the community. You can find them on{" "}
-              <span className="text-red-400 underline">GitHub</span> and{" "}
-              <span className="text-red-400 underline">Discord</span>.
+              the community. You can find them on GitHub and Discord.
             </p>
 
-            <p className="mt-8 flex text-red-400">
+            <p className="mt-8 flex">
               <FilePenLine size={20} />
               Edit this page
             </p>
@@ -239,7 +229,7 @@ export default function LucidePage() {
             <Separator className="my-6" />
             <span>
               <p className="text-sm">Next page</p>
-              <p className="text-red-500">Installation</p>
+              <p>Installation</p>
             </span>
           </main>
         </ScrollArea>

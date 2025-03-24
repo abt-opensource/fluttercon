@@ -122,8 +122,7 @@ export default function LucidePage() {
               Lucid vs Feather Icons
             </h2>
             <p className="mt-3 text-gray-700 text-lg">
-              Lucide is a community-driven fork of{" "}
-              <span className="text-red-400 underline">Feather Icons.</span>
+              Lucide is a community-driven fork of Feather Icons.
               <br />
               <br />
               The decision to create Lucide arose from growing dissatisfaction
@@ -172,7 +171,7 @@ export default function LucidePage() {
 
             <Separator className="my-6" />
 
-            <p className="mt-8 flex cursor-pointer text-red-400">
+            <p className="mt-8 flex cursor-pointer">
               <FilePenLine size={20} />
               Edit this page
             </p>
@@ -181,11 +180,11 @@ export default function LucidePage() {
             <div className="flex gap-72 ">
               <span>
                 <p className="text-sm">Previous page</p>
-                <p className="cursor-pointer text-red-400">Installation</p>
+                <p className="cursor-pointer">Installation</p>
               </span>
               <span>
                 <p className="text-sm">Next page</p>
-                <p className="cursor-pointer text-red-400">Color</p>
+                <p className="cursor-pointer">Color</p>
               </span>
             </div>
           </main>

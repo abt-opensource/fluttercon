@@ -124,14 +124,9 @@ export default function LucidePage() {
             <h1 className="mb-6 font-bold text-4xl">Sizing</h1>
             <p className="mb-4 text-lg">
               By default, the size of all icons is{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
-                24px
-              </span>{" "}
-              by{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
-                24px
-              </span>
-              . The size is adjustable using the size prop and CSS.
+              <span className="rounded bg-gray-200 px-1">24px</span> by{" "}
+              <span className="rounded bg-gray-200 px-1">24px</span>. The size
+              is adjustable using the size prop and CSS.
             </p>
             <Separator className="my-6" />
 
@@ -196,14 +191,9 @@ export default function LucidePage() {
             </h2>
             <p className="mb-4">
               The CSS properties{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
-                width
-              </span>{" "}
-              and{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
-                height
-              </span>{" "}
-              can be used to adjust the icon size.
+              <span className="rounded bg-gray-200 px-1">width</span> and{" "}
+              <span className="rounded bg-gray-200 px-1">height</span> can be
+              used to adjust the icon size.
             </p>
 
             <div className="flex min-h-full bg-black text-white">
@@ -262,12 +252,10 @@ export default function LucidePage() {
             <p className="mb-4">
               It is possible to resize icons based on font size. This can be
               achieved using the{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">em</span>{" "}
-              unit. See this{" "}
-              <span className="text-red-500 underline">MDN article</span> for
-              more information on the{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">em</span>{" "}
-              unit.
+              <span className="rounded bg-gray-200 px-1">em</span> unit. See
+              this <span className="underline">MDN article</span> for more
+              information on the{" "}
+              <span className="rounded bg-gray-200 px-1">em</span> unit.
             </p>
 
             <div className="flex min-h-full bg-black text-white">
@@ -325,10 +313,9 @@ export default function LucidePage() {
               Resizing with Tailwind
             </h2>
             <p className="mb-4">
-              <span className="rounded bg-gray-200 px-1 text-red-500">h-*</span>{" "}
-              and{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">w-*</span>{" "}
-              utilities can be used to adjust the size of the icon.
+              <span className="rounded bg-gray-200 px-1">h-*</span> and{" "}
+              <span className="rounded bg-gray-200 px-1">w-*</span> utilities
+              can be used to adjust the size of the icon.
             </p>
 
             <div className="flex min-h-full bg-black text-white">
@@ -381,7 +368,7 @@ export default function LucidePage() {
               </div>
             </div>
             <Separator className="my-6" />
-            <p className="mt-8 flex cursor-pointer text-red-400">
+            <p className="mt-8 flex cursor-pointer">
               <FilePenLine size={20} />
               Edit this page
             </p>
@@ -390,11 +377,11 @@ export default function LucidePage() {
             <div className="flex gap-72 ">
               <span>
                 <p className="text-sm">Previous page</p>
-                <p className="cursor-pointer text-red-400">Color</p>
+                <p className="cursor-pointer">Color</p>
               </span>
               <span>
                 <p className="text-sm">Next page</p>
-                <p className="cursor-pointer text-red-400">Stroke width</p>
+                <p className="cursor-pointer">Stroke width</p>
               </span>
             </div>
           </main>

@@ -153,10 +153,7 @@ export default function LucidePage() {
             <div className="mt-4 rounded-md bg-gray-100 p-3 text-gray-800">
               <code className="text-sm">{commands[selected]}</code>
             </div>
-            <p className="mt-3">
-              For more details, see the{" "}
-              <span className="text-red-400 underline">documentation</span>.
-            </p>
+            <p className="mt-3">For more details, see the documentation.</p>
           </section>
           <Separator className="my-6" />
 
@@ -188,9 +185,8 @@ export default function LucidePage() {
               <code className="text-sm">{commands[selected]}</code>
             </div>
             <p className="mt-3">
-              For more details, see the{" "}
-              <span className="text-red-400 underline">documentation</span>. For
-              React Native use the lucide-react-native package.
+              For more details, see the documentation.For React Native use the
+              lucide-react-native package.
             </p>
           </section>
           <Separator className="my-6" />
@@ -223,9 +219,8 @@ export default function LucidePage() {
               <code className="text-sm">{commands[selected]}</code>
             </div>
             <p className="mt-3">
-              For more details, see the{" "}
-              <span className="text-red-400 underline">documentation</span>. For
-              Vue 2 use the lucide-vue package.
+              For more details, see the documentation.For Vue 2 use the
+              lucide-vue package.
             </p>
           </section>
           <Separator className="my-6" />
@@ -257,10 +252,7 @@ export default function LucidePage() {
             <div className="mt-4 rounded-md bg-gray-100 p-3 text-gray-800">
               <code className="text-sm">{commands[selected]}</code>
             </div>
-            <p className="mt-3">
-              For more details, see the{" "}
-              <span className="text-red-400 underline">documentation</span>.
-            </p>
+            <p className="mt-3">For more details, see the documentation.</p>
           </section>
           <Separator className="my-6" />
 
@@ -291,10 +283,7 @@ export default function LucidePage() {
             <div className="mt-4 rounded-md bg-gray-100 p-3 text-gray-800">
               <code className="text-sm">{commands[selected]}</code>
             </div>
-            <p className="mt-3">
-              For more details, see the{" "}
-              <span className="text-red-400 underline">documentation</span>.
-            </p>
+            <p className="mt-3">For more details, see the documentation.</p>
           </section>
           <Separator className="my-6" />
 
@@ -326,10 +315,7 @@ export default function LucidePage() {
             <div className="mt-4 rounded-md bg-gray-100 p-3 text-gray-800">
               <code className="text-sm">{commands[selected]}</code>
             </div>
-            <p className="mt-3">
-              For more details, see the{" "}
-              <span className="text-red-400 underline">documentation</span>.
-            </p>
+            <p className="mt-3">For more details, see the documentation.</p>
           </section>
           <Separator className="my-6" />
 
@@ -360,10 +346,7 @@ export default function LucidePage() {
             <div className="mt-4 rounded-md bg-gray-100 p-3 text-gray-800">
               <code className="text-sm">{commands[selected]}</code>
             </div>
-            <p className="mt-3">
-              For more details, see the{" "}
-              <span className="text-red-400 underline">documentation</span>.
-            </p>
+            <p className="mt-3">For more details, see the documentation.</p>
           </section>
           <Separator className="my-6" />
 
@@ -396,10 +379,7 @@ export default function LucidePage() {
             <div className="mt-4 rounded-md bg-gray-100 p-3 text-gray-800">
               <code className="text-sm">{commands[selected]}</code>
             </div>
-            <p className="mt-3">
-              For more details, see the{" "}
-              <span className="text-red-400 underline">documentation</span>.
-            </p>
+            <p className="mt-3">For more details, see the documentation.</p>
           </section>
           <Separator className="my-6" />
 
@@ -411,11 +391,7 @@ export default function LucidePage() {
             <p className="mb-4">
               The Lucide Figma plugin. <br />
               <br />
-              Visit{" "}
-              <span className="text-red-400 underline">
-                Figma community page
-              </span>{" "}
-              to install the plugin.
+              Visit Figma community page to install the plugin.
             </p>
             <Image
               src="/img.png"
@@ -455,14 +431,11 @@ export default function LucidePage() {
             <div className="mt-4 rounded-md bg-gray-100 p-3 text-gray-800">
               <code className="text-sm">{commands[selected]}</code>
             </div>
-            <p className="mt-3">
-              For more details, see the{" "}
-              <span className="text-red-400 underline">pub.dev</span>.
-            </p>
+            <p className="mt-3">For more details, see the pub.dev.</p>
           </section>
           <Separator className="my-6" />
 
-          <p className="mt-8 flex cursor-pointer text-red-400">
+          <p className="mt-8 flex cursor-pointer">
             <FilePenLine size={20} />
             Edit this page
           </p>
@@ -471,11 +444,11 @@ export default function LucidePage() {
           <div className="flex gap-72 ">
             <span>
               <p className="text-sm">Previous page</p>
-              <p className="cursor-pointer text-red-400">What is Lucid?</p>
+              <p className="cursor-pointer">What is Lucid?</p>
             </span>
             <span>
               <p className="text-sm">Next page</p>
-              <p className="cursor-pointer text-red-400">Comparison</p>
+              <p className="cursor-pointer">Comparison</p>
             </span>
           </div>
         </ScrollArea>

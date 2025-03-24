@@ -117,14 +117,10 @@ export default function LucidePage() {
             <h1 className="mb-6 font-bold text-4xl">Color</h1>
             <p className="mb-4 text-lg">
               By default, all icons have the color value:{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
-                currentColor
-              </span>
-              . This keyword uses the element's computed text{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
-                color
-              </span>{" "}
-              value to represent the icon color.
+              <span className="rounded bg-gray-200 px-1">currentColor</span>.
+              This keyword uses the element's computed text{" "}
+              <span className="rounded bg-gray-200 px-1">color</span> value to
+              represent the icon color.
             </p>
 
             <p className="mb-6">
@@ -133,7 +129,7 @@ export default function LucidePage() {
                 href="/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-red-500 underline"
+                className="underline"
               >
                 currentColor on MDN
               </a>
@@ -205,25 +201,16 @@ export default function LucidePage() {
             </h2>
             <p className="mb-4">
               Because the color of lucide icons uses{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
-                currentColor
-              </span>
-              , the color of the icon depends on the computed{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
-                color
-              </span>{" "}
-              of the element, or it inherits it from its parent.
+              <span className="rounded bg-gray-200 px-1">currentColor</span>,
+              the color of the icon depends on the computed{" "}
+              <span className="rounded bg-gray-200 px-1">color</span> of the
+              element, or it inherits it from its parent.
               <br />
               <br />
               For example, if a parent element's color value is{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
-                #fff
-              </span>{" "}
-              and one of the children is a lucide icon, the color of the icon
-              will be rendered as{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
-                #fff
-              </span>
+              <span className="rounded bg-gray-200 px-1">#fff</span> and one of
+              the children is a lucide icon, the color of the icon will be
+              rendered as <span className="rounded bg-gray-200 px-1">#fff</span>
               . This is browser native behavior.
             </p>
 
@@ -278,7 +265,7 @@ export default function LucidePage() {
             </div>
 
             <Separator className="my-6" />
-            <p className="mt-8 flex cursor-pointer text-red-400">
+            <p className="mt-8 flex cursor-pointer">
               <FilePenLine size={20} />
               Edit this page
             </p>
@@ -287,11 +274,11 @@ export default function LucidePage() {
             <div className="flex gap-72 ">
               <span>
                 <p className="text-sm">Previous page</p>
-                <p className="cursor-pointer text-red-400">Comparison</p>
+                <p className="cursor-pointer">Comparison</p>
               </span>
               <span>
                 <p className="text-sm">Next page</p>
-                <p className="cursor-pointer text-red-400">Sizing</p>
+                <p className="cursor-pointer">Sizing</p>
               </span>
             </div>
           </main>

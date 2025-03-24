@@ -123,14 +123,11 @@ export default function LucidePage() {
             <p className="mb-4 text-lg">
               All icons are designed with SVG elements using strokes. These have
               a default stroke width of{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">2px</span>
+              <span className="rounded bg-gray-200 px-1">2px</span>
               .
               <br />
               <br />
-              The{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
-                strokeWidth
-              </span>{" "}
+              The <span className="rounded bg-gray-200 px-1">strokeWidth</span>{" "}
               can be adjusted to create a different look of the icons.
             </p>
             <Separator className="my-6" />
@@ -199,12 +196,10 @@ export default function LucidePage() {
             </h2>
             <p className="mb-4">
               When adjusting the{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
-                size
-              </span>{" "}
-              prop the size of the stroke width will be relative to the size of
-              the icon, this is the default SVG behavior. The{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
+              <span className="rounded bg-gray-200 px-1">size</span> prop the
+              size of the stroke width will be relative to the size of the icon,
+              this is the default SVG behavior. The{" "}
+              <span className="rounded bg-gray-200 px-1">
                 absolutestrokeWidth
               </span>{" "}
               prop is introduced to adjust this behavior to make the stroke
@@ -212,25 +207,20 @@ export default function LucidePage() {
               <br />
               <br />
               This means that when{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
+              <span className="rounded bg-gray-200 px-1">
                 absolutestrokeWidth
               </span>{" "}
               is enabled and the{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
-                size
-              </span>{" "}
-              of the icons is set to{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
-                48px
-              </span>{" "}
-              the strokeWidth will still be{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">2px</span>{" "}
-              on the screen.
+              <span className="rounded bg-gray-200 px-1">size</span> of the
+              icons is set to{" "}
+              <span className="rounded bg-gray-200 px-1">48px</span> the
+              strokeWidth will still be{" "}
+              <span className="rounded bg-gray-200 px-1">2px</span> on the
+              screen.
               <br />
-              Note{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">2px</span>{" "}
-              is the default stroke width for a Lucide icon, this can be
-              adjusted to all sizes.
+              Note <span className="rounded bg-gray-200 px-1">2px</span> is the
+              default stroke width for a Lucide icon, this can be adjusted to
+              all sizes.
             </p>
             <img src="/icon3.png" alt="" className="mb-4" />
 
@@ -239,14 +229,11 @@ export default function LucidePage() {
             </h2>
             <p className="mb-4">
               Setting{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
+              <span className="rounded bg-gray-200 px-1">
                 absolutestrokeWidth
               </span>{" "}
-              to{" "}
-              <span className="rounded bg-gray-200 px-1 text-red-500">
-                true
-              </span>{" "}
-              will make the stroke width absolute.
+              to <span className="rounded bg-gray-200 px-1">true</span> will
+              make the stroke width absolute.
             </p>
 
             <div className="flex min-h-full bg-black text-white">
@@ -300,7 +287,7 @@ export default function LucidePage() {
             </div>
 
             <Separator className="my-6" />
-            <p className="mt-8 flex cursor-pointer text-red-400">
+            <p className="mt-8 flex cursor-pointer">
               <FilePenLine size={20} />
               Edit this page
             </p>
@@ -309,11 +296,11 @@ export default function LucidePage() {
             <div className="flex gap-72 ">
               <span>
                 <p className="text-sm">Previous page</p>
-                <p className="cursor-pointer text-red-400">Sizing</p>
+                <p className="cursor-pointer">Sizing</p>
               </span>
               <span>
                 <p className="text-sm">Next page</p>
-                <p className="cursor-pointer text-red-400">Accessibility</p>
+                <p className="cursor-pointer">Accessibility</p>
               </span>
             </div>
           </main>
