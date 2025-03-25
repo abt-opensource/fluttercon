@@ -346,10 +346,12 @@ const Sbar: React.FC = () => {
           onClick={() => setIsOpen(false)}
           className="mb-4 bg-[hsl(var(--primary))] text-white md:hidden"
         >
-          <X size={20} /> Close
+          <X size={20} /> Close 
         </Button>
 
+       <Link href="/">
         <h1 className="mb-4 font-bold text-lg">Fluttercon</h1>
+        </Link>
 
         <Card className="mb-6 rounded-md bg-[#181818] p-3">
           <h2 className="mb-2 font-semibold text-sm">Customizer</h2>
@@ -430,10 +432,10 @@ const Sbar: React.FC = () => {
                   <li className="m-3 flex cursor-pointer justify-between hover:text-[hsl(var(--primary))]">
                     <Link
                       href={`/${cat.name.replace(/ /g, "-")}`}
-                      className="ml-5 flex w-full justify-between"
+                      className="ml-5 flex w-full justify-between hover:text-primary"
                     >
                       <span>{cat.name}</span>
-                      <span className="text-gray-500">{cat.count}</span>
+                      <span className="text-primary">{cat.count}</span>
                     </Link>
                   </li>
                 </TooltipTrigger>

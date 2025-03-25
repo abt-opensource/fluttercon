@@ -52,6 +52,7 @@ export default function LucidePage() {
                 <Separator />
                 <h4 className="font-semibold text-gray-800 text-lg">Basics</h4>
                 <ul className="space-y-2 font-medium text-gray-600 text-sm">
+
                   <li>
                     <Link href="/color" className="hover:text-red-500">
                       Color
@@ -67,7 +68,7 @@ export default function LucidePage() {
                       Stroke Width
                     </Link>
                   </li>
-                </ul>
+   </ul>
                 <Separator />
                 <h4 className="font-semibold text-black text-lg">Advanced</h4>
                 <ul className="space-y-2 font-medium text-gray-600 text-sm">
@@ -221,7 +222,9 @@ export default function LucidePage() {
               the community. You can find them on GitHub and Discord.
             </p>
 
-            <p className="mt-8 flex">
+
+            <p className="mt-8 flex text-red-400">
+
               <FilePenLine size={20} />
               Edit this page
             </p>
