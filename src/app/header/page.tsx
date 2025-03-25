@@ -14,25 +14,25 @@ export const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-4 z-10 mx-auto flex h-14 max-w-2xl items-center justify-between rounded-2xl bg-opacity-50 px-6 py-3 text-background backdrop-blur-sm">
+    <header className="sticky top-4 z-10 mx-auto flex h-14 max-w-3xl items-center justify-between rounded-2xl bg-opacity-50 px-6 py-3 text-background backdrop-blur-sm">
       {/* Desktop Navigation */}
       <nav className="hidden flex-wrap items-center gap-4 font-semibold text-foreground text-sm md:flex lg:gap-6">
-        <Link href="#" className="hover:text-gray-900">
+        <Link href="/fluttercon" className="hover:text-primary">
           Fluttercon
         </Link>
-        <Link href="#" className="hover:text-gray-300">
+        <Link href="/fluttercon" className="hover:text-primary">
           Icon
         </Link>
-        <Link href="#" className="hover:text-gray-300">
+        <Link href="/guide" className="hover:text-primary">
           Docs
         </Link>
-        <Link href="#" className="hover:text-gray-300">
-          Changelog
+        <Link href="/licensepage" className="hover:text-primary">
+          License
         </Link>
-        <Link href="#" className="hover:text-gray-300">
+        <Link href="#" className="hover:text-primary">
           Blog
         </Link>
-        <Link href="#" className="hover:text-gray-300">
+        <Link href="#" className="hover:text-primary">
           Pricing
         </Link>
 

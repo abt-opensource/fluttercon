@@ -1,6 +1,7 @@
 import { Button } from "@/primitives/button";
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -14,15 +15,15 @@ const HeroSection = () => {
             Discover. Customize. Create.
           </h1>
           <p className="mb-10 text-center font-semibold text-slate-300 max-sm:text-xs md:mx-auto md:w-[50%]">
-            <span className="text-green-400">Flutercon </span>is an open-source
+            <span className="text-primary">Flutercon </span>is an open-source
             icon library featuring 1500+ carefully crafted icons, specially
             designed for Flutter applications. Elevate your UI with scalable,
             high-quality icons that blend seamlessly into any project.
           </p>
           <div className="mb-10 flex w-full items-center justify-center">
-            <Button className="bg-foreground font-bold text-background hover:bg-foreground/60">
+            <Link href="/fluttercon" className="flex flex-row rounded-2xl bg-foreground p-3 font-bold text-background hover:bg-foreground/60">
               Explore Icons <MoveRight />
-            </Button>
+            </Link>
           </div>
           <div className="absolute bottom-0 left-10 hidden w-[30vw] md:block">
             <Image

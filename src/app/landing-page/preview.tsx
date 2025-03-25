@@ -9,11 +9,11 @@ export default function IconCustomizer() {
   const [absoluteStroke, setAbsoluteStroke] = useState(false);
 
   return (
-    <div className="mb-10 flex min-h-28 w-full flex-col items-center justify-center bg-black px-4">
+    <div className="mb-10 flex min-h-28 w-full flex-col items-center justify-center bg-background px-4">
       <div className="flex w-full max-w-7xl flex-col gap-6 rounded-xl bg-[#161616] p-6 shadow-lg lg:flex-row">
         {/* Sidebar */}
         <div className="w-full rounded-lg bg-[#121212] p-4 lg:w-1/4">
-          <h2 className="font-semibold text-lg text-white">
+          <h2 className="font-semibold text-foreground text-lg">
             Style as you please
           </h2>
           <p className="text-gray-400 text-sm">
@@ -33,7 +33,7 @@ export default function IconCustomizer() {
 
           <div className="mt-4">
             {/* biome-ignore lint/a11y/noLabelWithoutControl: <explanation> */}
-            <label className="text-gray-400 text-sm">Stroke Width</label>
+            <label className="text-primary text-sm">Stroke Width</label>
             <input
               type="range"
               min="1"
@@ -49,7 +49,7 @@ export default function IconCustomizer() {
 
           <div className="mt-4">
             {/* biome-ignore lint/a11y/noLabelWithoutControl: <explanation> */}
-            <label className="text-gray-400 text-sm">Size</label>
+            <label className="text-primary text-sm">Size</label>
             <input
               type="range"
               min="12"
@@ -58,7 +58,7 @@ export default function IconCustomizer() {
               value={size}
               // biome-ignore lint/style/useNumberNamespace: <explanation>
               onChange={(e) => setSize(parseInt(e.target.value))}
-              className="mt-1 w-full"
+              className="mt-1 w-full text-primary"
             />
           </div>
 
@@ -76,7 +76,7 @@ export default function IconCustomizer() {
           </div>
         </div>
 
-        <div className=" w-[60%] ml-14 items-center  justify-center sm:w-[60%] sm:flex-1 rounded-lg bg-[#121212] p-4 ">
+        <div className=" ml-14 w-[60%] items-center justify-center rounded-lg bg-[#121212] p-4 sm:w-[60%] sm:flex-1 ">
           <div className="grid grid-cols-4 gap-8 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10">
             {Icons.map((icon) => (
               <div
