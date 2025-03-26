@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-black px-5 py-10 text-center text-white">
-      <h1 className="font-bold text-5xl text-green-500 sm:text-6xl md:text-7xl lg:text-8xl">
+      <h1 className="font-bold text-5xl text-primary sm:text-6xl md:text-7xl lg:text-8xl">
         Fluttercon
       </h1>
 
