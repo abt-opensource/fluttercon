@@ -1,4 +1,5 @@
 "use client";
+import ReactDOMServer from "react-dom/server";
 import {
   Tooltip,
   TooltipContent,
@@ -6,7 +7,6 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Search } from "lucide-react";
-import Link from "next/link";
 import type React from "react";
 import { type JSX, useContext, useState } from "react";
 import { StrokeContext } from "../global";
@@ -22,6 +22,8 @@ interface IconType {
 }
 
 const IconList: React.FC = () => {
+  console.log("hii");
+  
   const context = useContext(StrokeContext);
   if (!context) {
     throw new Error("StrokeContext must be used within a StrokeProvider.");
@@ -41,43 +43,27 @@ const IconList: React.FC = () => {
 
   const copySvgToClipboard = () => {
     if (selectedIcon) {
-      const tempDiv = document.createElement("div");
-      tempDiv.innerHTML = selectedIcon.svg({
-        strokeWidth,
-        color,
-        iconSize,
-      }).props.children;
-
-      const svgString = `<svg viewBox="0 0 24 24" stroke="currentColor">${tempDiv.innerHTML}</svg>`;
-
+      const svgElement = selectedIcon.svg({ strokeWidth, color, iconSize });
+      
+      // Convert the React element to an SVG string
+      const svgString = ReactDOMServer.renderToStaticMarkup(svgElement);
+  
+      // Wrap the extracted SVG inside a proper tag
+      const formattedSvg = `<svg viewBox="0 0 24 24" stroke="currentColor">${svgString}</svg>`;
+  
       navigator.clipboard
-        .writeText(svgString)
+        .writeText(formattedSvg)
         .then(() => alert("SVG copied to clipboard!"))
         .catch((err) => console.error("Failed to copy SVG:", err));
     }
   };
+  
 
   return (
     <TooltipProvider>
       <header className="bg-black p-4 text-white">
         <nav className="mx-auto flex max-w-6xl items-center justify-end space-x-6">
-          <div className="hidden space-x-6 font-medium text-sm md:block">
-            <Link href="#" className="text-red-400">
-              Icons
-            </Link>
-            <Link href="#" className="hover:text-gray-400">
-              Guide
-            </Link>
-            <Link href="#" className="hover:text-gray-400">
-              Packages
-            </Link>
-            <Link href="#" className="hover:text-gray-400">
-              Showcase
-            </Link>
-            <Link href="#" className="hover:text-gray-400">
-              License
-            </Link>
-          </div>
+          
           <button
             type="button"
             className="text-gray-400 text-lg hover:text-white"
@@ -99,7 +85,7 @@ const IconList: React.FC = () => {
         </div>
       </header>
 
-      {/* Icon Grid */}
+     
       <div className="relative bg-black p-6 text-white">
         <div className="grid grid-cols-4 gap-2 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-16">
           {filteredIcons.map((icon) => (

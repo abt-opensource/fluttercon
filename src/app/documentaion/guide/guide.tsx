@@ -23,160 +23,242 @@ export default function LucidePage() {
         </button>
 
         <aside
-  className={`${
-    sidebarOpen ? "block" : "hidden"
-  } h-screen overflow-hidden border-r p-5 md:block md:w-64`}
->
-  <ScrollArea className="h-full w-full">
-    <div className="h-full pr-3">
-      <nav className="cursor-pointer space-y-4 pl-6">
-        <h4 className="font-semibold text-foreground text-lg">Introduction</h4>
-        <ul className="space-y-2 font-medium text-foreground text-sm">
-          <li>
-            <Link href="/documentaion/what-is-lucide" className="hover:text-primary">
-              What is Lucide?
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/install" className="hover:text-primary">
-              Installation
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/compare" className="hover:text-primary">
-              Comparison
-            </Link>
-          </li>
-        </ul>
-        <Separator />
+          className={`${
+            sidebarOpen ? "block" : "hidden"
+          } h-screen overflow-hidden border-r p-5 md:block md:w-64`}
+        >
+          <ScrollArea className="h-full w-full">
+            <div className="h-full pr-3">
+              <nav className="cursor-pointer space-y-4 pl-6">
+                <h4 className="font-semibold text-foreground text-lg">
+                  Introduction
+                </h4>
+                <ul className="space-y-2 font-medium text-foreground text-sm">
+                  <li>
+                    <Link
+                      href="/documentaion/what-is-lucide"
+                      className="hover:text-primary"
+                    >
+                      What is Lucide?
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/install"
+                      className="hover:text-primary"
+                    >
+                      Installation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/compare"
+                      className="hover:text-primary"
+                    >
+                      Comparison
+                    </Link>
+                  </li>
+                </ul>
+                <Separator />
 
-        <h4 className="font-semibold text-foreground text-lg">Basics</h4>
-        <ul className="space-y-2 font-medium text-foreground text-sm">
-          <li>
-            <Link href="/documentaion/color" className="hover:text-primary">
-              Color
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/sizing" className="hover:text-primary">
-              Sizing
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/stroke" className="hover:text-primary">
-              Stroke Width
-            </Link>
-          </li>
-        </ul>
-        <Separator />
+                <h4 className="font-semibold text-foreground text-lg">
+                  Basics
+                </h4>
+                <ul className="space-y-2 font-medium text-foreground text-sm">
+                  <li>
+                    <Link
+                      href="/documentaion/color"
+                      className="hover:text-primary"
+                    >
+                      Color
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/sizing"
+                      className="hover:text-primary"
+                    >
+                      Sizing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/stroke"
+                      className="hover:text-primary"
+                    >
+                      Stroke Width
+                    </Link>
+                  </li>
+                </ul>
+                <Separator />
 
-        <h4 className="font-semibold text-foreground text-lg">Advanced</h4>
-        <ul className="space-y-2 font-medium text-foreground text-sm">
-          <li>
-            <Link href="/documentaion/accessibility" className="hover:text-primary">
-              Accessibility
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/global-styling" className="hover:text-primary">
-              Global Styling
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/filled-icons" className="hover:text-primary">
-              Filled Icons
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/aliased-names" className="hover:text-primary">
-              Aliased Names
-            </Link>
-          </li>
-        </ul>
-        <Separator />
+                <h4 className="font-semibold text-foreground text-lg">
+                  Advanced
+                </h4>
+                <ul className="space-y-2 font-medium text-foreground text-sm">
+                  <li>
+                    <Link
+                      href="/documentaion/accessibility"
+                      className="hover:text-primary"
+                    >
+                      Accessibility
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/global-styling"
+                      className="hover:text-primary"
+                    >
+                      Global Styling
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/filled-icons"
+                      className="hover:text-primary"
+                    >
+                      Filled Icons
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/aliased-names"
+                      className="hover:text-primary"
+                    >
+                      Aliased Names
+                    </Link>
+                  </li>
+                </ul>
+                <Separator />
 
-        <h4 className="font-semibold text-foreground text-lg">Packages</h4>
-        <ul className="space-y-2 font-medium text-foreground text-sm">
-          <li>
-            <Link href="/documentaion/lucide" className="hover:text-primary">
-              Lucide
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/lucide-react" className="hover:text-primary">
-              Lucide React
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/lucide-vue" className="hover:text-primary">
-              Lucide Vue
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/lucide-svelte" className="hover:text-primary">
-              Lucide Svelte
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/lucide-solid" className="hover:text-primary">
-              Lucide Solid
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/lucide-react-native" className="hover:text-primary">
-              Lucide React Native
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/lucide-angular" className="hover:text-primary">
-              Lucide Angular
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/lucide-preact" className="hover:text-primary">
-              Lucide Preact
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/lucide-static" className="hover:text-primary">
-              Lucide Static
-            </Link>
-          </li>
-        </ul>
-        <Separator />
+                <h4 className="font-semibold text-foreground text-lg">
+                  Packages
+                </h4>
+                <ul className="space-y-2 font-medium text-foreground text-sm">
+                  <li>
+                    <Link
+                      href="/documentaion/lucide"
+                      className="hover:text-primary"
+                    >
+                      Lucide
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/lucide-react"
+                      className="hover:text-primary"
+                    >
+                      Lucide React
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/lucide-vue"
+                      className="hover:text-primary"
+                    >
+                      Lucide Vue
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/lucide-svelte"
+                      className="hover:text-primary"
+                    >
+                      Lucide Svelte
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/lucide-solid"
+                      className="hover:text-primary"
+                    >
+                      Lucide Solid
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/lucide-react-native"
+                      className="hover:text-primary"
+                    >
+                      Lucide React Native
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/lucide-angular"
+                      className="hover:text-primary"
+                    >
+                      Lucide Angular
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/lucide-preact"
+                      className="hover:text-primary"
+                    >
+                      Lucide Preact
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/lucide-static"
+                      className="hover:text-primary"
+                    >
+                      Lucide Static
+                    </Link>
+                  </li>
+                </ul>
+                <Separator />
 
-        <h4 className="font-semibold text-foreground text-lg">Contributing</h4>
-        <ul className="space-y-2 font-medium text-foreground text-sm">
-          <li>
-            <Link href="/documentaion/icon-design-principles" className="hover:text-primary">
-              Icon Design Principles
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/designing-illustration" className="hover:text-primary">
-              Designing in Illustration
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/designing-inkscape" className="hover:text-primary">
-              Designing in InkSpace
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/designing-figma" className="hover:text-primary">
-              Designing in Figma
-            </Link>
-          </li>
-          <li>
-            <Link href="/documentaion/designing-affinity-designer" className="hover:text-primary">
-              Designing in Affinity Designer
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </ScrollArea>
-</aside>
+                <h4 className="font-semibold text-foreground text-lg">
+                  Contributing
+                </h4>
+                <ul className="space-y-2 font-medium text-foreground text-sm">
+                  <li>
+                    <Link
+                      href="/documentaion/icon-design-principles"
+                      className="hover:text-primary"
+                    >
+                      Icon Design Principles
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/designing-illustration"
+                      className="hover:text-primary"
+                    >
+                      Designing in Illustration
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/designing-inkscape"
+                      className="hover:text-primary"
+                    >
+                      Designing in InkSpace
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/designing-figma"
+                      className="hover:text-primary"
+                    >
+                      Designing in Figma
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/documentaion/designing-affinity-designer"
+                      className="hover:text-primary"
+                    >
+                      Designing in Affinity Designer
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </ScrollArea>
+        </aside>
 
         {/* Main Content */}
         <ScrollArea className="h-screen w-full flex-1 p-8">

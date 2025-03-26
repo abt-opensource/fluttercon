@@ -1,4 +1,3 @@
-
 "use client";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -75,7 +74,7 @@ const Sbar: React.FC = () => {
       {/* Menu Toggle Button */}
       <Button
         onClick={() => {
-          console.log("Menu clicked, isOpen:", !isOpen); // Debug log
+          console.log("Menu clicked, isOpen:", !isOpen); 
           setIsOpen(true);
         }}
         className="fixed top-4 left-4 z-50 bg-black text-white md:hidden"
@@ -88,7 +87,7 @@ const Sbar: React.FC = () => {
       <Sidebar
         className={`fixed top-0 left-0 h-screen w-64 overflow-y-auto bg-black p-4 text-white transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } md:translate-x-0 md:w-72 z-50`}
+        } z-50 md:w-72 md:translate-x-0`}
       >
         <Button
           onClick={() => {
@@ -207,7 +206,7 @@ const Sbar: React.FC = () => {
           type="button"
           className="fixed inset-0 z-40 bg-black/50 md:hidden"
           onClick={() => {
-            console.log("Overlay clicked, isOpen:", false); 
+            console.log("Overlay clicked, isOpen:", false);
             setIsOpen(false);
           }}
         />

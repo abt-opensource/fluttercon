@@ -23,8 +23,11 @@ export const Header = () => {
         <Link href="/fluttercon" className="hover:text-primary">
           Icon
         </Link>
-        <Link href="/documentaion/
-        " className="hover:text-primary">
+        <Link
+          href="/documentaion/
+        "
+          className="hover:text-primary"
+        >
           Docs
         </Link>
         <Link href="/licensepage" className="hover:text-primary">

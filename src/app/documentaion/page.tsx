@@ -1,9 +1,13 @@
-import LucidePage from "./guide/guide";
+
 
 const page = () => {
   return (
     <div>
-      <LucidePage />
+      <main className="flex flex-1 items-center justify-center p-10">
+        <h1 className="font-bold text-4xl text-gray-400">
+          documentaion is coming soon....
+        </h1>
+      </main>
     </div>
   );
 };
