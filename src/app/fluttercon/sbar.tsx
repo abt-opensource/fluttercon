@@ -346,11 +346,11 @@ const Sbar: React.FC = () => {
           onClick={() => setIsOpen(false)}
           className="mb-4 bg-[hsl(var(--primary))] text-white md:hidden"
         >
-          <X size={20} /> Close 
+          <X size={20} /> Close
         </Button>
 
-       <Link href="/">
-        <h1 className="mb-4 font-bold text-lg">Fluttercon</h1>
+        <Link href="/">
+          <h1 className="mb-4 font-bold text-lg">Fluttercon</h1>
         </Link>
 
         <Card className="mb-6 rounded-md bg-[#181818] p-3">

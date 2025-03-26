@@ -3,7 +3,8 @@ import "@/styles/root-layout.css";
 import { fonts } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/theme";
-import Footer from "./footer/page";
+
+import Conditionalfooter from "./conditionalfooter";
 import { StrokeProvider } from "./global";
 import { Header } from "./header/page";
 
@@ -94,7 +95,7 @@ export default function RootLayout({
             {" "}
             <Header />
             {children}
-            <Footer />
+            <Conditionalfooter />
           </ThemeProvider>
         </StrokeProvider>
       </body>

@@ -13,10 +13,10 @@ export default function LucidePage() {
 
   return (
     <>
-      <div className="flex min-h-screen flex-col bg-white text-black md:flex-row">
+      <div className="flex min-h-screen flex-col bg-background text-foreground md:flex-row">
         <button
           type="button"
-          className="w-full border-b bg-stone-200 p-3 text-left text-black md:hidden"
+          className="w-full border-b bg-stone-200 p-3 text-left text-foreground md:hidden"
           onClick={() => setSidebarOpen(!sidebarOpen)}
         >
           <AlignJustify />
@@ -25,85 +25,98 @@ export default function LucidePage() {
         <aside
           className={`${
             sidebarOpen ? "block" : "hidden"
-          } h-screen overflow-hidden border-r bg-stone-100 p-5 md:block md:w-64`}
+          } h-screen overflow-hidden border-r p-5 md:block md:w-64`}
         >
           <ScrollArea className="h-full w-full">
             <div className="h-full pr-3">
               <nav className="cursor-pointer space-y-4 pl-6">
-                <h4 className="font-semibold text-gray-800 text-lg">
+                <h4 className="font-semibold text-foreground text-lg">
                   Introduction
                 </h4>
-                <ul className="space-y-2 font-medium text-gray-600 text-sm">
-                  <li className="hover:text-red-500">What is Lucide?</li>
+                <ul className="space-y-2 font-medium text-foreground text-sm">
+                  <li className="hover:text-primary">What is Lucide?</li>
                   <li>
                     <Link
-                      href="/install"
-                      className="space-y-2 hover:text-red-500"
+                      href="/documentaion/install"
+                      className="space-y-2 hover:text-primary"
                     >
                       Installation
                     </Link>
                   </li>
                   <li>
-                    <Link href="/compare" className="hover:text-red-500">
+                    <Link
+                      href="/documentaion/compare"
+                      className="hover:text-primary"
+                    >
                       Comparison
                     </Link>
                   </li>
                 </ul>
                 <Separator />
-                <h4 className="font-semibold text-gray-800 text-lg">Basics</h4>
-                <ul className="space-y-2 font-medium text-gray-600 text-sm">
-
+                <h4 className="font-semibold text-foreground text-lg">
+                  Basics
+                </h4>
+                <ul className="space-y-2 font-medium text-foreground text-sm">
                   <li>
-                    <Link href="/color" className="hover:text-red-500">
+                    <Link
+                      href="/documentaion/color"
+                      className="hover:text-primary"
+                    >
                       Color
                     </Link>
                   </li>
                   <li>
-                    <Link href="/sizing" className="hover:text-red-500">
+                    <Link
+                      href="/documentaion/sizing"
+                      className="hover:text-primary"
+                    >
                       Sizing
                     </Link>
                   </li>
                   <li>
-                    <Link href="/stroke" className="hover:text-red-500">
+                    <Link
+                      href="/documentaion/stroke"
+                      className="hover:text-primary"
+                    >
                       Stroke Width
                     </Link>
                   </li>
-   </ul>
+                </ul>
                 <Separator />
                 <h4 className="font-semibold text-black text-lg">Advanced</h4>
-                <ul className="space-y-2 font-medium text-gray-600 text-sm">
-                  <li className="hover:text-red-500">Accessibility</li>
-                  <li className="hover:text-red-500">Global styling</li>
-                  <li className="hover:text-red-500">Filled icons</li>
-                  <li className="hover:text-red-500">Aliased Names</li>
+                <ul className="space-y-2 font-medium text-foreground text-sm">
+                  <li className="hover:text-primary">Accessibility</li>
+                  <li className="hover:text-primary">Global styling</li>
+                  <li className="hover:text-primary">Filled icons</li>
+                  <li className="hover:text-primary">Aliased Names</li>
                 </ul>
 
                 <Separator />
                 <h4 className="font-semibold text-black text-lg">Packages</h4>
-                <ul className="space-y-2 font-medium text-gray-600 text-sm">
-                  <li className="hover:text-red-500">Lucide</li>
-                  <li className="hover:text-red-500">Lucide React</li>
-                  <li className="hover:text-red-500">Lucide Vue</li>
-                  <li className="hover:text-red-500">Lucide Svelte</li>
-                  <li className="hover:text-red-500">Lucide Solid</li>
-                  <li className="hover:text-red-500">Lucide React Native</li>
-                  <li className="hover:text-red-500">Lucide Angular</li>
-                  <li className="hover:text-red-500">Lucide Preact</li>
-                  <li className="hover:text-red-500">Lucide Static</li>
+                <ul className="space-y-2 font-medium text-foreground text-sm">
+                  <li className="hover:text-primary">Lucide</li>
+                  <li className="hover:text-primary">Lucide React</li>
+                  <li className="hover:text-primary">Lucide Vue</li>
+                  <li className="hover:text-primary">Lucide Svelte</li>
+                  <li className="hover:text-primary">Lucide Solid</li>
+                  <li className="hover:text-primary">Lucide React Native</li>
+                  <li className="hover:text-primary">Lucide Angular</li>
+                  <li className="hover:text-primary">Lucide Preact</li>
+                  <li className="hover:text-primary">Lucide Static</li>
                 </ul>
 
                 <Separator />
                 <h4 className="font-semibold text-black text-lg">
                   Contributing
                 </h4>
-                <ul className="space-y-2 font-medium text-gray-600 text-sm">
-                  <li className="hover:text-red-500">Icon Design Principles</li>
-                  <li className="hover:text-red-500">
+                <ul className="space-y-2 font-medium text-foreground text-sm">
+                  <li className="hover:text-primary">Icon Design Principles</li>
+                  <li className="hover:text-primary">
                     Designing In Illustration
                   </li>
-                  <li className="hover:text-red-500">Designing In InkSpace</li>
-                  <li className="hover:text-red-500">Designing In Figma</li>
-                  <li className="hover:text-red-500">
+                  <li className="hover:text-primary">Designing In InkSpace</li>
+                  <li className="hover:text-primary">Designing In Figma</li>
+                  <li className="hover:text-primary">
                     Designing In Affinity Designer
                   </li>
                 </ul>
@@ -115,10 +128,10 @@ export default function LucidePage() {
         {/* Main Content */}
         <ScrollArea className="h-screen w-full flex-1 p-8">
           <main className="mx-auto max-w-2xl pb-12">
-            <h1 className="font-bold text-3xl text-gray-800">
+            <h1 className="font-bold text-3xl text-foreground">
               What is Lucide?
             </h1>
-            <p className="mt-3 text-gray-700 text-lg">
+            <p className="mt-3 text-foreground text-lg">
               Lucide is an open-source icon library that provides 1000+ vector
               (svg) files for displaying icons and symbols in digital and
               non-digital projects. The library aims to make it easier for
@@ -131,11 +144,11 @@ export default function LucidePage() {
 
             <h2
               id="available-icons"
-              className="font-semibold text-2xl text-gray-800"
+              className="font-semibold text-2xl text-foreground"
             >
               Available Icons
             </h2>
-            <p className="mt-3 text-gray-700 text-lg">
+            <p className="mt-3 text-foreground text-lg">
               Lucide contains icons with different variants and states, allowing
               users to choose the most suitable icon for their needs. And if a
               desired icon isn't available yet, users can open a design request,
@@ -146,10 +159,10 @@ export default function LucidePage() {
 
             <Separator className="my-6" />
 
-            <h2 className="font-semibold text-2xl text-gray-800">
+            <h2 className="font-semibold text-2xl text-foreground">
               Complete Set of Icons
             </h2>
-            <p className="mt-3 text-gray-700 text-lg">
+            <p className="mt-3 text-foreground text-lg">
               As new applications with specific features arise, Lucide aims to
               provide a complete set of icons for every project. The community
               follows a set of design rules when designing new icons. These
@@ -164,11 +177,11 @@ export default function LucidePage() {
 
             <h2
               id="code-optimization"
-              className="font-semibold text-2xl text-gray-800"
+              className="font-semibold text-2xl text-foreground"
             >
               Code Optimizations
             </h2>
-            <p className="mt-3 text-gray-700 text-lg">
+            <p className="mt-3 text-foreground text-lg">
               In addition to design, code is also important. Assets like icons
               can significantly increase bandwidth usage in web projects. With
               the growing internet, Lucide has a responsibility to keep their
@@ -182,11 +195,11 @@ export default function LucidePage() {
 
             <h2
               id="accessibility"
-              className="font-semibold text-2xl text-gray-800"
+              className="font-semibold text-2xl text-foreground"
             >
               Accessibility
             </h2>
-            <p className="mt-3 text-gray-700 text-lg">
+            <p className="mt-3 text-foreground text-lg">
               Icons are pictures that show what something means without using
               words. They can be very helpful because they can quickly give
               information.
@@ -200,11 +213,11 @@ export default function LucidePage() {
 
             <h2
               id="official-packages"
-              className="font-semibold text-2xl text-gray-800"
+              className="font-semibold text-2xl text-foreground"
             >
               Official Packages
             </h2>
-            <p className="mt-3 text-gray-700 text-lg">
+            <p className="mt-3 text-foreground text-lg">
               Lucide's official packages are designed to work on different
               platforms, making it easier for users to integrate icons into
               their projects. The packages are available for various
@@ -214,17 +227,18 @@ export default function LucidePage() {
 
             <Separator className="my-6" />
 
-            <h2 id="community" className="font-semibold text-2xl text-gray-800">
+            <h2
+              id="community"
+              className="font-semibold text-2xl text-foreground"
+            >
               Community
             </h2>
-            <p className="mt-3 text-gray-700 text-lg">
+            <p className="mt-3 text-foreground text-lg">
               If you have any questions about Lucide, feel free to reach out to
               the community. You can find them on GitHub and Discord.
             </p>
 
-
-            <p className="mt-8 flex text-red-400">
-
+            <p className="mt-8 flex text-primary">
               <FilePenLine size={20} />
               Edit this page
             </p>
@@ -239,31 +253,33 @@ export default function LucidePage() {
 
         {/* Right Side Content */}
 
-        <aside className="mt-6 w-full border-t bg-white p-5 md:mt-0 md:h-screen md:w-64 md:border-l">
-          <h4 className="font-semibold text-gray-800 text-lg">On This Page</h4>
-          <ul className="mt-3 cursor-pointer space-y-2 font-medium text-gray-500 text-sm">
+        <aside className="mt-6 w-full border-t p-5 md:mt-0 md:h-screen md:w-64 md:border-l">
+          <h4 className="font-semibold text-foreground text-lg">
+            On This Page
+          </h4>
+          <ul className="mt-3 cursor-pointer space-y-2 font-medium text-foreground text-sm">
             <li>
-              <a href="#available-icons" className="hover:text-gray-600">
+              <a href="#available-icons" className="hover:text-foreground">
                 Available Icons
               </a>
             </li>
             <li>
-              <a href="#code-optimization" className="hover:text-gray-600">
+              <a href="#code-optimization" className="hover:text-foreground">
                 Code Optimization
               </a>
             </li>
             <li>
-              <a href="#accessibility" className="hover:text-gray-600">
+              <a href="#accessibility" className="hover:text-foreground">
                 Accessibility
               </a>
             </li>
             <li>
-              <a href="#official-packages" className="hover:text-gray-600">
+              <a href="#official-packages" className="hover:text-foreground">
                 Official Packages
               </a>
             </li>
             <li>
-              <a href="#community" className="hover:text-gray-600">
+              <a href="#community" className="hover:text-foreground">
                 Community
               </a>
             </li>
@@ -280,10 +296,12 @@ export default function LucidePage() {
                 height={300}
                 className="flex h-16 w-16 items-center justify-center rounded-lg"
               />
-              <p className="mt-3 text-gray-500 text-sm">
+              <p className="mt-3 text-foreground text-sm">
                 Design and Development tips in your inbox. Every weekday.
               </p>
-              <span className="mt-1 text-gray-500 text-xs">ADS VIA CARBON</span>
+              <span className="mt-1 text-foreground text-xs">
+                ADS VIA CARBON
+              </span>
             </CardContent>
           </Card>
         </aside>
