@@ -4,8 +4,8 @@ import { fonts } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/theme";
 import Footer from "../components/footer";
-import { StrokeProvider } from "./global";
 import { Header } from "../components/header";
+import { StrokeProvider } from "./global";
 
 export const metadata: Metadata = {
   title: "Fluttercon | ABT-Open-Sourse",
