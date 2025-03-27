@@ -1,5 +1,4 @@
 "use client";
-import ReactDOMServer from "react-dom/server";
 import {
   Tooltip,
   TooltipContent,
@@ -9,6 +8,7 @@ import {
 import { Search } from "lucide-react";
 import type React from "react";
 import { type JSX, useContext, useState } from "react";
+import ReactDOMServer from "react-dom/server";
 import { StrokeContext } from "../global";
 import { Icons } from "./icons";
 
@@ -23,7 +23,7 @@ interface IconType {
 
 const IconList: React.FC = () => {
   console.log("hii");
-  
+
   const context = useContext(StrokeContext);
   if (!context) {
     throw new Error("StrokeContext must be used within a StrokeProvider.");
@@ -44,26 +44,24 @@ const IconList: React.FC = () => {
   const copySvgToClipboard = () => {
     if (selectedIcon) {
       const svgElement = selectedIcon.svg({ strokeWidth, color, iconSize });
-      
+
       // Convert the React element to an SVG string
       const svgString = ReactDOMServer.renderToStaticMarkup(svgElement);
-  
+
       // Wrap the extracted SVG inside a proper tag
       const formattedSvg = `<svg viewBox="0 0 24 24" stroke="currentColor">${svgString}</svg>`;
-  
+
       navigator.clipboard
         .writeText(formattedSvg)
         .then(() => alert("SVG copied to clipboard!"))
         .catch((err) => console.error("Failed to copy SVG:", err));
     }
   };
-  
 
   return (
     <TooltipProvider>
       <header className="bg-black p-4 pt-10 text-white">
         <nav className="mx-auto flex max-w-6xl items-center justify-end space-x-6">
-          
           <button
             type="button"
             className="text-gray-400 text-lg hover:text-white"
@@ -85,7 +83,6 @@ const IconList: React.FC = () => {
         </div>
       </header>
 
-     
       <div className="relative bg-black p-6 text-white">
         <div className="grid grid-cols-4 gap-2 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-16">
           {filteredIcons.map((icon) => (

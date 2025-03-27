@@ -3,8 +3,8 @@ import "@/styles/root-layout.css";
 import { fonts } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/theme";
-import Conditionalfooter from "./conditionalfooter";
 import { Header } from "../components/header";
+import Conditionalfooter from "./conditionalfooter";
 import { StrokeProvider } from "./global";
 
 export const metadata: Metadata = {
