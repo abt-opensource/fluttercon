@@ -4,7 +4,7 @@ const page = () => {
   return (
     <div>
       {/* <IconGrid/> */}
-      <Head />
+      {/* <Head /> */}
     </div>
   );
 };

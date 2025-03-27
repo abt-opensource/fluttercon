@@ -2,9 +2,10 @@
 
 import { useParams } from "next/navigation";
 import { type JSX, type SVGProps, useContext, useState } from "react";
-import { Icons } from "../fluttercon/icons";
+import { Icons } from "@/app/fluttercon/icons"
 import Sbar from "../fluttercon/sbar";
 import { StrokeContext } from "../global";
+import { useRouter } from "next/router";
 
 interface IconType {
   name: string;
@@ -14,17 +15,22 @@ interface IconType {
 }
 
 const CategoryPage = () => {
+  // console.log("helloooooo");
+  
   const context = useContext(StrokeContext);
   if (!context) {
     throw new Error("CategoryPage must be used within a StrokeProvider");
   }
 
   const { strokeWidth, color, iconSize } = context;
+  
 
   const categoryParam = useParams()?.category;
   const categoryName = Array.isArray(categoryParam)
     ? categoryParam[0]
     : categoryParam || "";
+    console.log("hello",categoryParam);
+    
 
   const filteredIcons = Icons.filter(
     (icon) =>
