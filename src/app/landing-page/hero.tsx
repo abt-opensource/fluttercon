@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <div className="w-full py-10">
-      <div className="mb-10 w-full px-10">
+    <div className="w-full bg-black py-10 text-white">
+      <div className="mt-30 mb-10 w-full px-10">
         <div className="relative min-h-[30rem] flex-col">
           <h1 className="mb-5 text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
             Icons that speak louder than words
@@ -21,8 +21,10 @@ const HeroSection = () => {
             high-quality icons that blend seamlessly into any project.
           </p>
           <div className="mb-10 flex w-full items-center justify-center">
-            <Link href="/fluttercon" className="flex flex-row rounded-2xl bg-foreground p-3 font-bold text-background hover:bg-foreground/60">
-              Explore Icons <MoveRight />
+            <Link href="/fluttercon" className="">
+              <Button>
+                Explore Icons <MoveRight />
+              </Button>
             </Link>
           </div>
           <div className="absolute bottom-0 left-10 hidden w-[30vw] md:block">

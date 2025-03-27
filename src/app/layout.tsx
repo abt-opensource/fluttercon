@@ -3,9 +3,9 @@ import "@/styles/root-layout.css";
 import { fonts } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/theme";
-import Footer from "./footer/page";
+import Footer from "../components/footer";
 import { StrokeProvider } from "./global";
-import { Header } from "./header/page";
+import { Header } from "../components/header";
 
 export const metadata: Metadata = {
   title: "Fluttercon | ABT-Open-Sourse",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     "Next Essential - An Essential Template to get started with Next.js application with all the essentials included...",
   icons: {
-    icon: "flutterconlogo.png",
+    icon: "favicon.jpg",
   },
   openGraph: {
     title: "Fluttercon | ABT Open Source",

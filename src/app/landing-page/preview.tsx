@@ -3,13 +3,13 @@ import { useState } from "react";
 import { Icons } from "../fluttercon/icons";
 
 export default function IconCustomizer() {
-  const [color, setColor] = useState("#fff");
+  const [color, setColor] = useState("#ffffff");
   const [strokeWidth, setStrokeWidth] = useState(2);
   const [size, setSize] = useState(24);
   const [absoluteStroke, setAbsoluteStroke] = useState(false);
 
   return (
-    <div className="mb-10 flex min-h-28 w-full flex-col items-center justify-center bg-background px-4">
+    <div className="flex min-h-28 w-full flex-col items-center justify-center bg-black px-4 py-10 text-white">
       <div className="flex w-full max-w-7xl flex-col gap-6 rounded-xl bg-[#161616] p-6 shadow-lg lg:flex-row">
         {/* Sidebar */}
         <div className="w-full rounded-lg bg-[#121212] p-4 lg:w-1/4">

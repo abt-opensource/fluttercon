@@ -6,7 +6,6 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Search } from "lucide-react";
-import Link from "next/link";
 import type React from "react";
 import { type JSX, useContext, useState } from "react";
 import { StrokeContext } from "../global";
@@ -59,33 +58,7 @@ const IconList: React.FC = () => {
 
   return (
     <TooltipProvider>
-      <header className="bg-black p-4 text-white">
-        <nav className="mx-auto flex max-w-6xl items-center justify-end space-x-6">
-          <div className="hidden space-x-6 font-medium text-sm md:block">
-            <Link href="#" className="text-red-400">
-              Icons
-            </Link>
-            <Link href="#" className="hover:text-gray-400">
-              Guide
-            </Link>
-            <Link href="#" className="hover:text-gray-400">
-              Packages
-            </Link>
-            <Link href="#" className="hover:text-gray-400">
-              Showcase
-            </Link>
-            <Link href="#" className="hover:text-gray-400">
-              License
-            </Link>
-          </div>
-          <button
-            type="button"
-            className="text-gray-400 text-lg hover:text-white"
-          >
-            ⋯
-          </button>
-        </nav>
-
+      <header className="bg-black p-4 pt-20 text-white">
         {/* Search Input */}
         <div className="relative mt-5">
           <input
