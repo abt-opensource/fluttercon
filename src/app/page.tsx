@@ -1,4 +1,3 @@
-import { ThemeToggle } from "@/components/theme-toggle";
 import Example from "./landing-page/example";
 import FeatureCard from "./landing-page/featurecards";
 import HeroSection from "./landing-page/hero";
@@ -11,7 +10,6 @@ export default function Home() {
       <FeatureCard />
       <IconCustomizer />
       <Example />
-      <ThemeToggle />
     </>
   );
 }

@@ -19,7 +19,7 @@ const Footer = () => {
         </button>
         <button
           type="button"
-          className="rounded-full bg-gray-800·p-3 transition hover:bg-gray-700"
+          className="rounded-full bg-gray-800 p-3 transition hover:bg-gray-700"
         >
           <Mail size={20} />
         </button>
