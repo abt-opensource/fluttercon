@@ -1,6 +1,4 @@
-// import Sidebar from './sidebar'
 import IconList from "./gallery";
-// import Sidebar from './sidebar'
 import Sbar from "./sbar";
 const layout = () => {
   return (

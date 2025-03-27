@@ -1,8 +1,11 @@
 "use client";
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Sidebar, SidebarProvider } from "@/components/ui/sidebar";
+import {
+  Sidebar,
+  SidebarProvider,
+  SidebarTrigger,
+} from "@/components/ui/sidebar";
 import { Slider } from "@/components/ui/slider";
 import { Switch } from "@/components/ui/switch";
 import {
@@ -11,7 +14,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import type React from "react";
 import { useContext, useState } from "react";
@@ -39,7 +41,6 @@ const Sbar: React.FC = () => {
   } = strokeContext;
   const [absoluteStroke, setAbsoluteStroke] = useState<boolean>(false);
   const [collapsed] = useState<boolean>(false);
-  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const category: Category[] = [
     { name: "home", count: 29 },
@@ -70,35 +71,12 @@ const Sbar: React.FC = () => {
   ];
 
   return (
-    <SidebarProvider>
-      {/* Menu Toggle Button */}
-      <Button
-        onClick={() => {
-          console.log("Menu clicked, isOpen:", !isOpen); 
-          setIsOpen(true);
-        }}
-        className="fixed top-4 left-4 z-50 bg-black text-white md:hidden"
-        size="icon"
-      >
-        <Menu size={24} />
-      </Button>
-
-      {/* Sidebar */}
+    <SidebarProvider className="bg-black">
+      <SidebarTrigger className="z-10" />
       <Sidebar
-        className={`fixed top-0 left-0 h-screen w-64 overflow-y-auto bg-black p-4 text-white transition-transform duration-300 ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        } z-50 md:w-72 md:translate-x-0`}
+        // style={{ overflowY: "auto" }}
+        className={"overflow-y-auto bg-sidebar p-4"}
       >
-        <Button
-          onClick={() => {
-            console.log("Close clicked, isOpen:", false); // Debug log
-            setIsOpen(false);
-          }}
-          className="mb-4 bg-[hsl(var(--primary))] text-white md:hidden"
-        >
-          <X size={20} /> Close
-        </Button>
-
         <Link href="/">
           <h1 className="mb-4 font-bold text-lg">Fluttercon</h1>
         </Link>
@@ -174,7 +152,7 @@ const Sbar: React.FC = () => {
         </p>
 
         <h2 className="mb-2 font-semibold text-lg">Categories</h2>
-        <ul className="space-y-1 text-xs">
+        <ul className="space-y-1 pb-15 text-xs">
           {category.map((cat) => (
             <TooltipProvider key={cat.name}>
               <Tooltip>
@@ -199,18 +177,6 @@ const Sbar: React.FC = () => {
           ))}
         </ul>
       </Sidebar>
-
-      {/* Overlay */}
-      {isOpen && (
-        <button
-          type="button"
-          className="fixed inset-0 z-40 bg-black/50 md:hidden"
-          onClick={() => {
-            console.log("Overlay clicked, isOpen:", false);
-            setIsOpen(false);
-          }}
-        />
-      )}
     </SidebarProvider>
   );
 };

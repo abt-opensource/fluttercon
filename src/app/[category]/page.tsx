@@ -70,7 +70,7 @@ const CategoryPage = () => {
           <Sbar />
         </div>
 
-        <div className="flex-1 p-6">
+        <div className="flex-1 p-6 pt-25">
           <h1 className="mb-4 font-bold text-2xl text-white capitalize">
             {categoryName}
           </h1>

@@ -61,7 +61,7 @@ const IconList: React.FC = () => {
 
   return (
     <TooltipProvider>
-      <header className="bg-black p-4 text-white">
+      <header className="bg-black p-4 pt-10 text-white">
         <nav className="mx-auto flex max-w-6xl items-center justify-end space-x-6">
           
           <button
