@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import {
   CircleDashed,
   Expand,
@@ -29,7 +32,7 @@ const features = [
     icon: <Package className="h-6 w-6 text-primary" />,
     title: "Packages support",
     description:
-      "Lucide is available as a package for all major package managers.",
+      "Fluttercon is available as a package for all major package managers.",
   },
   {
     icon: <Trees className="h-6 w-6 text-primary" />,
@@ -40,23 +43,29 @@ const features = [
   {
     icon: <Users className="h-6 w-6 text-primary" />,
     title: "Active community",
-    description: "Lucide has an active community on GitHub and Discord.",
+    description: "Fluttercon has an active community on GitHub and Discord.",
   },
 ];
 
 const FeatureCard = () => {
   return (
-    <div className="flex min-h-32 items-center justify-center bg-[#0d0d0d] p-6">
+    <div className="mt-30 flex min-h-full items-center justify-center bg-background p-6">
       <div className="grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
         {features.map((feature) => (
-          <div
+          <motion.div
             key={feature.title}
-            className="flex flex-col gap-4 rounded-lg border border-[#222] bg-[#161616] p-6 text-white shadow-md"
+            className="flex flex-col gap-4 rounded-lg border border-[#222] bg-p-6 text-white shadow-md"
+            initial={{ opacity: 0, y: 50 }} // Initial state: invisible and shifted down
+            whileInView={{ opacity: 1, y: 0 }} // Final state: visible and normal position
+            transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition effect
+            viewport={{ once: true }} // Trigger animation only once
           >
             <div className="flex items-center">{feature.icon}</div>
             <h3 className="font-semibold text-lg">{feature.title}</h3>
-            <p className="text-gray-400 text-sm">{feature.description}</p>
-          </div>
+            <p className="font-geist-sans text-gray-400 text-sm">
+              {feature.description}
+            </p>
+          </motion.div>
         ))}
       </div>
     </div>
