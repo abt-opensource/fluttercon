@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+
 @import "tailwindcss";
+
 /*
   ---break---
 */
@@ -54,6 +57,12 @@
 /*
   ---break---
 */
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
 
 :root {
   --background: oklch(1 0 0);
