@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { Icons } from "../fluttercon/icons";
 
@@ -9,9 +10,17 @@ export default function IconCustomizer() {
   const [absoluteStroke, setAbsoluteStroke] = useState(false);
 
   return (
-    <div className="flex min-h-28 w-full flex-col items-center justify-center bg-black px-4 py-10 text-white">
+    <div className="mt-60 flex min-h-full w-full flex-col items-center justify-center bg-background px-4 py-10 text-white">
       <div className="flex w-full max-w-7xl flex-col gap-6 rounded-xl bg-[#161616] p-6 shadow-lg lg:flex-row">
-        {/* Sidebar */}
+        {/* Sidebar */}{" "}
+        {/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
+        <motion.div
+          className="flex h-8 w-8 items-center justify-center"
+          initial={{ opacity: 0, y: 50 }} // Initial state: invisible and shifted down
+          whileInView={{ opacity: 1, y: 0 }} // Animate to visible and normal position
+          transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
+          viewport={{ once: true }} // Trigger animation once when in view
+        ></motion.div>
         <div className="w-full rounded-lg bg-[#121212] p-4 lg:w-1/4">
           <h2 className="font-semibold text-foreground text-lg">
             Style as you please
@@ -22,12 +31,12 @@ export default function IconCustomizer() {
 
           <div className="mt-4">
             {/* biome-ignore lint/a11y/noLabelWithoutControl: <explanation> */}
-            <label className="text-gray-400 text-sm">Color</label>
+            <label className="text-gray-400 text-primary text-sm">Color</label>
             <input
               type="color"
               value={color}
               onChange={(e) => setColor(e.target.value)}
-              className="mt-1 h-10 w-full cursor-pointer rounded-md bg-gray-800"
+              className="mt-1 h-10 w-full cursor-pointer rounded-md "
             />
           </div>
 
@@ -43,7 +52,7 @@ export default function IconCustomizer() {
               onChange={(e) =>
                 setStrokeWidth(Number.parseFloat(e.target.value))
               }
-              className="mt-1 w-full"
+              className="mt-1 w-full accent-primary"
             />
           </div>
 
@@ -56,9 +65,8 @@ export default function IconCustomizer() {
               max="48"
               step="2"
               value={size}
-              // biome-ignore lint/style/useNumberNamespace: <explanation>
-              onChange={(e) => setSize(parseInt(e.target.value))}
-              className="mt-1 w-full text-primary"
+              onChange={(e) => setSize(Number.parseInt(e.target.value))}
+              className="mt-1 w-full accent-primary"
             />
           </div>
 
@@ -71,20 +79,24 @@ export default function IconCustomizer() {
               type="checkbox"
               checked={absoluteStroke}
               onChange={() => setAbsoluteStroke(!absoluteStroke)}
-              className="ml-auto h-5 w-5"
+              className="ml-auto h-5 w-5 accent-primary"
             />
           </div>
         </div>
-
-        <div className=" ml-14 w-[60%] items-center justify-center rounded-lg bg-[#121212] p-4 sm:w-[60%] sm:flex-1 ">
+        {/* Icons Section */}
+        <div className="ml-14 w-[60%] items-center justify-center rounded-lg bg-[#121212] p-4 sm:w-[60%] sm:flex-1">
           <div className="grid grid-cols-4 gap-8 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10">
             {Icons.map((icon) => (
-              <div
+              <motion.div
                 key={icon.name}
                 className="flex h-8 w-8 items-center justify-center"
+                initial={{ opacity: 0, y: 50 }} // Initial state: invisible and shifted down
+                whileInView={{ opacity: 1, y: 0 }} // Animate to visible and normal position
+                transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
+                viewport={{ once: true }} // Trigger animation once when in view
               >
                 {icon.svg({ strokeWidth, color })}
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
