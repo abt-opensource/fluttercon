@@ -3,8 +3,8 @@
 import { Button } from "@/primitives/button";
 import { ArrowUpRight } from "lucide-react";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (

@@ -1,7 +1,7 @@
 "use client";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { Icons } from "../fluttercon/icons";
-import { motion } from "framer-motion";
 
 export default function IconCustomizer() {
   const [color, setColor] = useState("#ffffff");
@@ -12,16 +12,15 @@ export default function IconCustomizer() {
   return (
     <div className="mt-60 flex min-h-full w-full flex-col items-center justify-center bg-background px-4 py-10 text-white">
       <div className="flex w-full max-w-7xl flex-col gap-6 rounded-xl bg-[#161616] p-6 shadow-lg lg:flex-row">
-        {/* Sidebar */} <motion.div
-               
-                className="flex h-8 w-8 items-center justify-center"
-                initial={{ opacity: 0, y: 50 }} // Initial state: invisible and shifted down
-                whileInView={{ opacity: 1, y: 0 }} // Animate to visible and normal position
-                transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
-                viewport={{ once: true }} // Trigger animation once when in view
-              >
-               
-              </motion.div>
+        {/* Sidebar */}{" "}
+        {/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
+        <motion.div
+          className="flex h-8 w-8 items-center justify-center"
+          initial={{ opacity: 0, y: 50 }} // Initial state: invisible and shifted down
+          whileInView={{ opacity: 1, y: 0 }} // Animate to visible and normal position
+          transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
+          viewport={{ once: true }} // Trigger animation once when in view
+        ></motion.div>
         <div className="w-full rounded-lg bg-[#121212] p-4 lg:w-1/4">
           <h2 className="font-semibold text-foreground text-lg">
             Style as you please
@@ -84,7 +83,6 @@ export default function IconCustomizer() {
             />
           </div>
         </div>
-
         {/* Icons Section */}
         <div className="ml-14 w-[60%] items-center justify-center rounded-lg bg-[#121212] p-4 sm:w-[60%] sm:flex-1">
           <div className="grid grid-cols-4 gap-8 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10">

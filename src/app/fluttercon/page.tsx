@@ -1,7 +1,3 @@
-// import Head from "./head";
-
-import React from 'react'
-
 const page = () => {
   return (
     <div>
@@ -11,7 +7,7 @@ const page = () => {
         </h1>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
