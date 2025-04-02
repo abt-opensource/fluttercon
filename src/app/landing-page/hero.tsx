@@ -49,10 +49,15 @@ const HeroSection = () => {
             high-quality icons that blend seamlessly into any project.
           </p>
 
-          <div className="mb-10 flex w-full items-center justify-center">
+          <div className="mb-10 flex w-full items-center justify-center gap-4">
             <Link href="/fluttercon">
               <Button className="bg-primary">
                 Explore Icons <ArrowUpRight />
+              </Button>
+            </Link>
+            <Link href="/documentaion">
+              <Button className="ml-5 bg-secondary text-foreground hover:bg-secondary">
+                Get Started <ArrowUpRight />
               </Button>
             </Link>
           </div>
