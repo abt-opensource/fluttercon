@@ -54,13 +54,12 @@ const HeroSection = () => {
               <Button className="bg-primary">
                 Explore Icons <ArrowUpRight />
               </Button>
-              </Link>
-              <Link href="/documentaion">
-              <Button className="bg-secondary ml-5 text-foreground hover:bg-secondary">
+            </Link>
+            <Link href="/documentaion">
+              <Button className="ml-5 bg-secondary text-foreground hover:bg-secondary">
                 Get Started <ArrowUpRight />
               </Button>
-              </Link>
-           
+            </Link>
           </div>
         </div>
       </div>

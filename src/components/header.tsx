@@ -78,7 +78,7 @@ import { Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export const Header  = () => {
+export const Header = () => {
   return (
     <div className="fixed top-0 z-50 flex h-16 w-full items-center bg-opacity-50 px-4 text-white backdrop-blur-sm">
       <div>
@@ -106,4 +106,3 @@ export const Header  = () => {
     </div>
   );
 };
-

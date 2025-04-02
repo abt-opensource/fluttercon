@@ -55,10 +55,10 @@ const FeatureCard = () => {
           <motion.div
             key={feature.title}
             className="flex flex-col gap-4 rounded-lg border border-[#222] bg-p-6 text-white shadow-md"
-            initial={{ opacity: 0, y: 50 }} 
-            whileInView={{ opacity: 1, y: 0 }} 
-            transition={{ duration: 0.8, ease: "easeOut" }} 
-            viewport={{ once: true }} 
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
           >
             <div className="flex items-center">{feature.icon}</div>
             <h3 className="font-semibold text-lg">{feature.title}</h3>
