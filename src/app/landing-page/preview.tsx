@@ -36,7 +36,7 @@ export default function IconCustomizer() {
               type="color"
               value={color}
               onChange={(e) => setColor(e.target.value)}
-              className="mt-1 h-10 w-full cursor-pointer rounded-md "
+              className="mt-1 h-10 w-full cursor-pointer rounded-4xl  "
             />
           </div>
 
